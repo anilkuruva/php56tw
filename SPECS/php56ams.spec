@@ -1,6 +1,6 @@
 %global base_ver 5.6
 %global real_name php
-%global ctl_suffix 56ctl
+%global managedapps_suffix 56ams
 %global phpfpm_user php-fpm
 %global phpfpm_group %{phpfpm_user}
 %global phpfpm_home %{_localstatedir}/lib/php-fpm
@@ -78,9 +78,9 @@
 %endif
 
 Summary: PHP scripting language for creating dynamic web sites
-Name: %{real_name}%{?ctl_suffix}
+Name: %{real_name}%{?managedapps_suffix}
 Version: 5.6.34
-Release: 1.ctl%{?dist}
+Release: 1.CTL%{?dist}
 # All files licensed under PHP version 3.01, except
 # Zend is licensed under Zend
 # TSRM is licensed under BSD
@@ -1793,7 +1793,7 @@ fi
 
 
 %changelog
-* Tue Mar 06 2018 Peter Abeln <peter.abeln@centurylink.com - 5.3.34-1.ctl
+* Tue Mar 06 2018 Peter Abeln <peter.abeln@centurylink.com - 5.3.34-1.CTL
 - Restore builtin json code to simplify bootstrapping.
 
 * Fri Mar 02 2018 Ben Harper <ben.harper@rackspace.com> - 5.6.34-1.ius
