@@ -1,13 +1,3 @@
-# NOTES ON BOOTSTRAPPING PHP 5.6:
-#
-# Due to the dependency cycle between PHP, pear, and pecl-jsonc, one has to
-# build in the following order:
-#
-# 1) php56u php_bootstrap 1
-# 2) php56u-pear
-# 3) php56u-pecl-jsonc
-# 4) php56u php_bootstrap 0
-
 %global base_ver 5.6
 %global real_name php
 %global ius_suffix 56u
@@ -28,9 +18,6 @@
 # Extension version
 %global opcachever  7.0.6-dev
 
-# Use for first build of PHP (before pecl/zip and pecl/jsonc)
-%global php_bootstrap   0
-
 # Adds -z now to the linker flags
 %global _hardened_build 1
 
@@ -40,11 +27,7 @@
 %global mysql_sock %(mysql_config --socket 2>/dev/null || echo /var/lib/mysql/mysql.sock)
 
 # Regression tests take a long time, you can skip 'em with this
-%if %{php_bootstrap}
-%global runselftest 0
-%else
 %{!?runselftest: %global runselftest 1}
-%endif
 
 # Use the arch-specific mysql_config binary to avoid mismatch with the
 # arch detection heuristic used by bindir/mysql_config.
@@ -105,10 +88,8 @@ License: PHP and Zend and BSD
 Group: Development/Languages
 URL: http://www.php.net/
 
-# Need to download official tarball and strip non-free stuff
-# wget http://www.php.net/distributions/php-%%{version}.tar.xz
-# ./strip.sh %%{version}
-Source0: php-%{version}-strip.tar.xz
+# Need to download official tarball
+Source0: php-%{version}.tar.xz
 Source1: php.conf
 Source2: php.ini
 Source3: macros.php
@@ -118,7 +99,6 @@ Source6: php-fpm.service
 Source7: php-fpm.logrotate
 Source9: php.modconf
 Source10: php.ztsmodconf
-Source11: strip.sh
 Source13: nginx-fpm.conf
 Source14: nginx-php.conf
 Source15: httpd-fpm.conf
@@ -332,9 +312,6 @@ Provides: %{name}-sockets, %{name}-sockets%{?_isa}
 Provides: %{name}-spl, %{name}-spl%{?_isa}
 Provides: %{name}-standard = %{version}, %{name}-standard%{?_isa} = %{version}
 Provides: %{name}-tokenizer, %{name}-tokenizer%{?_isa}
-%if ! %{php_bootstrap}
-Requires: %{name}-pecl-jsonc%{?_isa}
-%endif
 %if %{with_zip}
 Provides: %{name}-zip, %{name}-zip%{?_isa}
 %endif
@@ -394,9 +371,6 @@ Provides: %{real_name}-devel = %{version}-%{release}, %{real_name}-devel%{?_isa}
 Provides: %{name}-zts-devel = %{version}-%{release}, %{name}-zts-devel%{?_isa} = %{version}-%{release}
 Provides: %{real_name}-zts-devel = %{version}-%{release}, %{real_name}-zts-devel%{?_isa} = %{version}-%{release}
 %endif
-%if ! %{php_bootstrap}
-Requires: %{name}-pecl-jsonc-devel%{?_isa}
-%endif
 Conflicts: %{real_name}-devel < %{base_ver}
 
 %description devel
@@ -443,6 +417,22 @@ Conflicts: %{real_name}-imap < %{base_ver}
 The php-imap module will add IMAP (Internet Message Access Protocol)
 support to PHP. IMAP is a protocol for retrieving and uploading e-mail
 messages on mail servers. PHP is an HTML-embedded scripting language.
+
+%package json
+Summary: A module for PHP applications that use JSON
+Group: Development/Languages
+# JSON license does not meet Redhat's criteria for redistribution due to
+# its second clause, "The Software shall be used for Good, not Evil."
+License: JSON
+Requires: %{name}-common%{?_isa} = %{version}-%{release}
+Provides: config(%{real_name}-json) = %{version}-%{release}
+Provides: %{real_name}-json = %{version}-%{release}, %{real_name}-json%{?_isa} = %{version}-%{release}
+BuildRequires:
+Conflicts: %{real_name}-json < %{base_ver}
+
+%description json
+The php-json module will add JSON (JavaScript Object Notation) support
+to PHP.  JSON is a data-interchange format.
 
 %package ldap
 Summary: A module for PHP applications that use LDAP
@@ -1137,6 +1127,7 @@ build --libdir=%{_libdir}/php \
       --enable-opcache \
       --enable-phpdbg \
       --with-imap=shared --with-imap-ssl \
+      --with-json=shared
       --enable-mbstring=shared \
       --enable-mbregex \
 %if %{with_libgd}
@@ -1272,6 +1263,7 @@ build --includedir=%{_includedir}/php-zts \
       --enable-pcntl \
       --enable-opcache \
       --with-imap=shared --with-imap-ssl \
+      --with-json=shared
       --enable-mbstring=shared \
       --enable-mbregex \
 %if %{with_libgd}
