@@ -1793,6 +1793,9 @@ fi
 
 
 %changelog
+* Tue Mar 06 2018 Peter Abeln <peter.abeln@centurylink.com - 5.3.34-1.ctl
+- Restore builtin json code to simplify bootstrapping.
+
 * Fri Mar 02 2018 Ben Harper <ben.harper@rackspace.com> - 5.6.34-1.ius
 - Latest upstream
 
