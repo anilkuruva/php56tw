@@ -1126,7 +1126,7 @@ build --libdir=%{_libdir}/php \
       --enable-opcache \
       --enable-phpdbg \
       --with-imap=shared --with-imap-ssl \
-      --with-json=shared \
+      --enable-json=shared \
       --enable-mbstring=shared \
       --enable-mbregex \
 %if %{with_libgd}
@@ -1262,7 +1262,7 @@ build --includedir=%{_includedir}/php-zts \
       --enable-pcntl \
       --enable-opcache \
       --with-imap=shared --with-imap-ssl \
-      --with-json=shared \
+      --enable-json=shared \
       --enable-mbstring=shared \
       --enable-mbregex \
 %if %{with_libgd}
@@ -1490,7 +1490,7 @@ sed -i -e 's:/run:%{_localstatedir}/run:' $RPM_BUILD_ROOT%{_httpd_confdir}/php-f
 install -D -m 644 %{SOURCE14} $RPM_BUILD_ROOT%{_sysconfdir}/nginx/default.d/php.conf
 
 # Generate files lists and stub .ini files for each subpackage
-for mod in pgsql odbc ldap snmp xmlrpc imap \
+for mod in pgsql odbc ldap snmp xmlrpc imap json \
     mysqlnd mysql mysqli pdo_mysql \
     mbstring gd dom xsl soap bcmath dba xmlreader xmlwriter \
     simplexml bz2 calendar ctype exif ftp gettext gmp iconv \
