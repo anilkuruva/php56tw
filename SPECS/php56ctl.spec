@@ -1755,6 +1755,7 @@ fi
 %files pgsql -f files.pgsql
 %files odbc -f files.odbc
 %files imap -f files.imap
+%files json -f files.json
 %files ldap -f files.ldap
 %files snmp -f files.snmp
 %files xml -f files.xml
