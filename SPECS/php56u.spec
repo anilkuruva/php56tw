@@ -10,7 +10,7 @@
 
 %global base_ver 5.6
 %global real_name php
-%global ius_suffix 56u
+%global ctl_suffix 56ctl
 %global phpfpm_user php-fpm
 %global phpfpm_group %{phpfpm_user}
 %global phpfpm_home %{_localstatedir}/lib/php-fpm
@@ -95,9 +95,9 @@
 %endif
 
 Summary: PHP scripting language for creating dynamic web sites
-Name: %{real_name}%{?ius_suffix}
+Name: %{real_name}%{?ctl_suffix}
 Version: 5.6.34
-Release: 1.ius%{?dist}
+Release: 1.ctl%{?dist}
 # All files licensed under PHP version 3.01, except
 # Zend is licensed under Zend
 # TSRM is licensed under BSD
