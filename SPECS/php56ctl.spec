@@ -1126,7 +1126,7 @@ build --libdir=%{_libdir}/php \
       --enable-opcache \
       --enable-phpdbg \
       --with-imap=shared --with-imap-ssl \
-      --with-json=shared
+      --with-json=shared \
       --enable-mbstring=shared \
       --enable-mbregex \
 %if %{with_libgd}
@@ -1262,7 +1262,7 @@ build --includedir=%{_includedir}/php-zts \
       --enable-pcntl \
       --enable-opcache \
       --with-imap=shared --with-imap-ssl \
-      --with-json=shared
+      --with-json=shared \
       --enable-mbstring=shared \
       --enable-mbregex \
 %if %{with_libgd}
