@@ -427,7 +427,6 @@ License: JSON
 Requires: %{name}-common%{?_isa} = %{version}-%{release}
 Provides: config(%{real_name}-json) = %{version}-%{release}
 Provides: %{real_name}-json = %{version}-%{release}, %{real_name}-json%{?_isa} = %{version}-%{release}
-BuildRequires:
 Conflicts: %{real_name}-json < %{base_ver}
 
 %description json
