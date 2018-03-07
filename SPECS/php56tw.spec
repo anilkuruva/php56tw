@@ -1198,7 +1198,7 @@ popd
 
 without_shared="--without-gd \
       --disable-dom --disable-dba --without-unixODBC \
-      --disable-opcache \
+      --disable-opcache --disable-json \
       --disable-xmlreader --disable-xmlwriter \
       --without-sqlite3 --disable-phar --disable-fileinfo \
       --without-pspell --disable-wddx \
