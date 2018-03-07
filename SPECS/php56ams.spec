@@ -1,6 +1,6 @@
 %global base_ver 5.6
 %global real_name php
-%global managedapps_suffix 56ams
+%global managedapps_suffix 56tw
 %global phpfpm_user php-fpm
 %global phpfpm_group %{phpfpm_user}
 %global phpfpm_home %{_localstatedir}/lib/php-fpm
