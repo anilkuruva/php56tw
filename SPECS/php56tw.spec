@@ -141,7 +141,7 @@ Patch300: php-5.6.3-datetests.patch
 
 BuildRequires: bzip2-devel, curl-devel >= 7.9
 BuildRequires: pam-devel
-BuildRequires: httpd-devel < 2.4.10
+BuildRequires: httpd-devel > 2.4.10
 BuildRequires: libstdc++-devel, openssl-devel
 BuildRequires: sqlite-devel >= 3.6.0
 BuildRequires: zlib-devel, smtpdaemon, libedit-devel
