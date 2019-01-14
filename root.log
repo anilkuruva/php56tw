@@ -1,0 +1,920 @@
+INFO buildroot.py:350:  Mock Version: 1.4.13
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/dev/pts
+DEBUG util.py:119:  creating dir: /var/lib/mock/epel-6-x86_64/root/dev/pts
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/dev/shm
+DEBUG util.py:119:  creating dir: /var/lib/mock/epel-6-x86_64/root/dev/shm
+DEBUG buildroot.py:481:  kernel version == 3.10.0-862.el7.x86_64
+DEBUG util.py:129:  touching file: /var/lib/mock/epel-6-x86_64/root/etc/fstab
+DEBUG util.py:129:  touching file: /var/lib/mock/epel-6-x86_64/root/etc/yum/yum.conf
+DEBUG util.py:129:  touching file: /var/lib/mock/epel-6-x86_64/root/etc/dnf/dnf.conf
+DEBUG util.py:129:  touching file: /var/lib/mock/epel-6-x86_64/root/var/log/yum.log
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/proc
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/var/lib/mock/epel-6-x86_64/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/sys
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/var/lib/mock/epel-6-x86_64/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/dev/shm
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/epel-6-x86_64/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/dev/pts
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/epel-6-x86_64/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/var/cache/yum/
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '--bind', '/var/cache/mock/epel-6-x86_64/yum_cache/', '/var/lib/mock/epel-6-x86_64/root/var/cache/yum/'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/proc/filesystems
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/mount', '-n', '--bind', '/tmp/mock-selinux-plugin.WhXbb4', '/var/lib/mock/epel-6-x86_64/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG buildroot.py:143:  rootdir = /var/lib/mock/epel-6-x86_64/root
+DEBUG buildroot.py:144:  resultdir = /var/lib/mock/epel-6-x86_64/result
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/etc/pki/mock
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/etc/yum/pluginconf.d
+DEBUG package_manager.py:256:  configure yum
+DEBUG package_manager.py:268:  configure yum priorities
+DEBUG package_manager.py:270:  configure yum rhnplugin
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: userdel: user mockbuild is currently used by process 15125
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/sbin/groupdel', 'mock'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/sbin/useradd', '-o', '-m', '-u', '0', '-g', '135', '-d', '/builddir', '-n', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:119:  creating dir: /var/lib/mock/epel-6-x86_64/root/builddir/build/RPMS
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:119:  creating dir: /var/lib/mock/epel-6-x86_64/root/builddir/build/SPECS
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:119:  creating dir: /var/lib/mock/epel-6-x86_64/root/builddir/build/SRPMS
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:119:  creating dir: /var/lib/mock/epel-6-x86_64/root/builddir/build/SOURCES
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:119:  creating dir: /var/lib/mock/epel-6-x86_64/root/builddir/build/BUILD
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:119:  creating dir: /var/lib/mock/epel-6-x86_64/root/builddir/build/BUILDROOT
+DEBUG util.py:116:  ensuring that dir exists: /var/lib/mock/epel-6-x86_64/root/builddir/build/originals
+DEBUG util.py:119:  creating dir: /var/lib/mock/epel-6-x86_64/root/builddir/build/originals
+DEBUG package_manager.py:118:  ['/usr/bin/yum', '--installroot', '/var/lib/mock/epel-6-x86_64/root/', '-y', '--releasever', '6', 'update']
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/yum', '--installroot', '/var/lib/mock/epel-6-x86_64/root/', '-y', '--releasever', '6', 'update', '--setopt=tsflags=nocontexts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C.UTF-8', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to set locale, defaulting to C
+DEBUG util.py:492:  base                                                                                                                                  | 3.7 kB  00:00:00     
+DEBUG util.py:492:  epel                                                                                                                                  | 4.7 kB  00:00:00     
+DEBUG util.py:492:  ius                                                                                                                                   | 2.3 kB  00:00:00     
+DEBUG util.py:492:  updates                                                                                                                               | 3.4 kB  00:00:00     
+DEBUG util.py:492:  ius/x86_64/primary_db                                                                                                                 | 320 kB  00:00:00     
+DEBUG util.py:492:  No packages marked for update
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:129:  touching file: /var/lib/mock/epel-6-x86_64/root/.initialized
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/php56tw-5.6.39-1.CTL.el7.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: rpmdb: /var/lib/rpm/Name: unexpected file type or format
+DEBUG util.py:490:  BUILDSTDERR: error: cannot open Name index using db3 - Invalid argument (22)
+DEBUG util.py:492:  php56tw                     ##################################################
+DEBUG util.py:634:  Child return code was: 0
+DEBUG buildroot.py:369:  removing 4 rpm db files
+DEBUG buildroot.py:374:  nuke_rpm_db: removing /var/lib/mock/epel-6-x86_64/root/var/lib/rpm/__db.001
+DEBUG buildroot.py:374:  nuke_rpm_db: removing /var/lib/mock/epel-6-x86_64/root/var/lib/rpm/__db.002
+DEBUG buildroot.py:374:  nuke_rpm_db: removing /var/lib/mock/epel-6-x86_64/root/var/lib/rpm/__db.003
+DEBUG buildroot.py:374:  nuke_rpm_db: removing /var/lib/mock/epel-6-x86_64/root/var/lib/rpm/__db.004
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/rpm', '-qpl', '/builddir/build/originals/php56tw-5.6.39-1.CTL.el7.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: rpmdb: /var/lib/rpm/Name: unexpected file type or format
+DEBUG util.py:490:  BUILDSTDERR: error: cannot open Name index using db3 - Invalid argument (22)
+DEBUG util.py:492:  httpd-fpm.conf
+DEBUG util.py:492:  macros.php
+DEBUG util.py:492:  nginx-fpm.conf
+DEBUG util.py:492:  nginx-php.conf
+DEBUG util.py:492:  opcache-default.blacklist
+DEBUG util.py:492:  opcache.ini
+DEBUG util.py:492:  php-5.2.0-includedir.patch
+DEBUG util.py:492:  php-5.3.0-recode.patch
+DEBUG util.py:492:  php-5.4.0-dlopen.patch
+DEBUG util.py:492:  php-5.4.0-phpize.patch
+DEBUG util.py:492:  php-5.4.7-odbctimer.patch
+DEBUG util.py:492:  php-5.4.8-ldap_r.patch
+DEBUG util.py:492:  php-5.4.9-fixheader.patch
+DEBUG util.py:492:  php-5.4.9-phpinfo.patch
+DEBUG util.py:492:  php-5.6.13-systzdata-v12.patch
+DEBUG util.py:492:  php-5.6.17-libdb.patch
+DEBUG util.py:492:  php-5.6.3-datetests.patch
+DEBUG util.py:492:  php-5.6.3-embed.patch
+DEBUG util.py:492:  php-5.6.30-curltls.patch
+DEBUG util.py:492:  php-5.6.39.tar.xz
+DEBUG util.py:492:  php-fpm-www.conf
+DEBUG util.py:492:  php-fpm.conf
+DEBUG util.py:492:  php-fpm.init
+DEBUG util.py:492:  php-fpm.logrotate
+DEBUG util.py:492:  php-fpm.service
+DEBUG util.py:492:  php.conf
+DEBUG util.py:492:  php.ini
+DEBUG util.py:492:  php.modconf
+DEBUG util.py:492:  php.ztsmodconf
+DEBUG util.py:492:  php56tw.spec
+DEBUG util.py:634:  Child return code was: 0
+DEBUG buildroot.py:369:  removing 4 rpm db files
+DEBUG buildroot.py:374:  nuke_rpm_db: removing /var/lib/mock/epel-6-x86_64/root/var/lib/rpm/__db.001
+DEBUG buildroot.py:374:  nuke_rpm_db: removing /var/lib/mock/epel-6-x86_64/root/var/lib/rpm/__db.002
+DEBUG buildroot.py:374:  nuke_rpm_db: removing /var/lib/mock/epel-6-x86_64/root/var/lib/rpm/__db.003
+DEBUG buildroot.py:374:  nuke_rpm_db: removing /var/lib/mock/epel-6-x86_64/root/var/lib/rpm/__db.004
+DEBUG util.py:653:  child environment: None
+DEBUG package_manager.py:118:  ['/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/epel-6-x86_64/root/', '--releasever', '6', '/var/lib/mock/epel-6-x86_64/root//builddir/build/SRPMS/php56tw-5.6.39-1.CTL.el6.src.rpm']
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/usr/bin/yum-builddep', '--installroot', '/var/lib/mock/epel-6-x86_64/root/', '--releasever', '6', '/var/lib/mock/epel-6-x86_64/root//builddir/build/SRPMS/php56tw-5.6.39-1.CTL.el6.src.rpm', '--setopt=tsflags=nocontexts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C.UTF-8', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell False
+DEBUG util.py:490:  BUILDSTDERR: Failed to set locale, defaulting to C
+DEBUG util.py:492:  Enabling ius-source repository
+DEBUG util.py:492:  ius-source                                                                                                                            | 2.3 kB  00:00:00     
+DEBUG util.py:492:  ius-source/primary_db                                                                                                                 |  44 kB  00:00:00     
+DEBUG util.py:492:  Getting requirements for php56tw-5.6.39-1.CTL.el6.src
+DEBUG util.py:492:   --> bzip2-devel-1.0.5-7.el6_0.x86_64
+DEBUG util.py:492:   --> libcurl-devel-7.19.7-53.el6_9.x86_64
+DEBUG util.py:492:   --> pam-devel-1.1.1-24.el6.x86_64
+DEBUG util.py:492:   --> httpd24u-devel-2.4.35-1.ius.el6.x86_64
+DEBUG util.py:492:   --> Already installed : libstdc++-devel-4.4.7-23.el6.x86_64
+DEBUG util.py:492:   --> openssl-devel-1.0.1e-57.el6.x86_64
+DEBUG util.py:492:   --> sqlite-devel-3.6.20-1.el6_7.2.x86_64
+DEBUG util.py:492:   --> zlib-devel-1.2.3-29.el6.x86_64
+DEBUG util.py:492:   --> ssmtp-2.61-22.el6.x86_64
+DEBUG util.py:492:   --> libedit-devel-2.11-4.20080712cvs.1.el6.x86_64
+DEBUG util.py:492:   --> Already installed : bzip2-1.0.5-7.el6_0.x86_64
+DEBUG util.py:492:   --> Already installed : 4:perl-5.10.1-144.el6.x86_64
+DEBUG util.py:492:   --> libtool-2.2.6-15.5.el6.x86_64
+DEBUG util.py:492:   --> Already installed : gcc-c++-4.4.7-23.el6.x86_64
+DEBUG util.py:492:   --> libtool-ltdl-devel-2.2.6-15.5.el6.x86_64
+DEBUG util.py:492:   --> systemtap-sdt-devel-2.9-9.el6.x86_64
+DEBUG util.py:492:   --> libacl-devel-2.2.49-7.el6_9.1.x86_64
+DEBUG util.py:492:   --> krb5-devel-1.10.3-65.el6.x86_64
+DEBUG util.py:492:   --> libc-client-devel-2007e-11.el6.x86_64
+DEBUG util.py:492:   --> cyrus-sasl-devel-2.1.23-15.el6_6.2.x86_64
+DEBUG util.py:492:   --> openldap-devel-2.4.40-16.el6.x86_64
+DEBUG util.py:492:   --> postgresql-devel-8.4.20-8.el6_9.x86_64
+DEBUG util.py:492:   --> unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:   --> libxml2-devel-2.7.6-21.el6_8.1.x86_64
+DEBUG util.py:492:   --> firebird-devel-2.5.7.27050.0-1.el6.x86_64
+DEBUG util.py:492:   --> 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:   --> libxslt-devel-1.1.26-2.el6_3.1.x86_64
+DEBUG util.py:492:   --> libxml2-devel-2.7.6-21.el6_8.1.x86_64
+DEBUG util.py:492:   --> t1lib-devel-5.1.2-6.el6_2.1.x86_64
+DEBUG util.py:492:   --> libjpeg-turbo-devel-1.2.1-3.el6_5.x86_64
+DEBUG util.py:492:   --> 2:libpng-devel-1.2.49-2.el6_7.x86_64
+DEBUG util.py:492:   --> freetype-devel-2.3.11-17.el6.x86_64
+DEBUG util.py:492:   --> libXpm-devel-3.5.10-2.el6.x86_64
+DEBUG util.py:492:   --> libvpx-devel-1.3.0-5.el6_5.x86_64
+DEBUG util.py:492:   --> gmp-devel-4.3.1-13.el6.x86_64
+DEBUG util.py:492:   --> db4-devel-4.7.25-22.el6.x86_64
+DEBUG util.py:492:   --> tokyocabinet-devel-1.4.33-6.el6.x86_64
+DEBUG util.py:492:   --> libmcrypt-devel-2.5.8-9.el6.x86_64
+DEBUG util.py:492:   --> libtidy-devel-0.99.0-19.20070615.1.el6.x86_64
+DEBUG util.py:492:   --> freetds-devel-0.91-2.el6.x86_64
+DEBUG util.py:492:   --> 12:aspell-devel-0.60.6-12.el6.x86_64
+DEBUG util.py:492:   --> recode-devel-3.6-28.1.el6.x86_64
+DEBUG util.py:492:   --> libicu-devel-4.2.1-14.el6.x86_64
+DEBUG util.py:492:   --> 1:enchant-devel-1.5.0-5.el6.x86_64
+DEBUG util.py:492:  --> Running transaction check
+DEBUG util.py:492:  ---> Package aspell-devel.x86_64 12:0.60.6-12.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: aspell = 12:0.60.6-12.el6 for package: 12:aspell-devel-0.60.6-12.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libpspell.so.15()(64bit) for package: 12:aspell-devel-0.60.6-12.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libaspell.so.15()(64bit) for package: 12:aspell-devel-0.60.6-12.el6.x86_64
+DEBUG util.py:492:  ---> Package bzip2-devel.x86_64 0:1.0.5-7.el6_0 will be installed
+DEBUG util.py:492:  ---> Package cyrus-sasl-devel.x86_64 0:2.1.23-15.el6_6.2 will be installed
+DEBUG util.py:492:  --> Processing Dependency: cyrus-sasl = 2.1.23-15.el6_6.2 for package: cyrus-sasl-devel-2.1.23-15.el6_6.2.x86_64
+DEBUG util.py:492:  ---> Package db4-devel.x86_64 0:4.7.25-22.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: db4-cxx = 4.7.25-22.el6 for package: db4-devel-4.7.25-22.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libdb_cxx-4.7.so()(64bit) for package: db4-devel-4.7.25-22.el6.x86_64
+DEBUG util.py:492:  ---> Package enchant-devel.x86_64 1:1.5.0-5.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: enchant = 1:1.5.0-5.el6 for package: 1:enchant-devel-1.5.0-5.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: pkgconfig(gmodule-no-export-2.0) for package: 1:enchant-devel-1.5.0-5.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: pkgconfig(glib-2.0) for package: 1:enchant-devel-1.5.0-5.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: glib2-devel for package: 1:enchant-devel-1.5.0-5.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libenchant.so.1()(64bit) for package: 1:enchant-devel-1.5.0-5.el6.x86_64
+DEBUG util.py:492:  ---> Package firebird-devel.x86_64 0:2.5.7.27050.0-1.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: firebird-libfbclient = 2.5.7.27050.0-1.el6 for package: firebird-devel-2.5.7.27050.0-1.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: firebird-libfbembed = 2.5.7.27050.0-1.el6 for package: firebird-devel-2.5.7.27050.0-1.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libfbclient.so.2()(64bit) for package: firebird-devel-2.5.7.27050.0-1.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libfbembed.so.2.5()(64bit) for package: firebird-devel-2.5.7.27050.0-1.el6.x86_64
+DEBUG util.py:492:  ---> Package freetds-devel.x86_64 0:0.91-2.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: freetds = 0.91-2.el6 for package: freetds-devel-0.91-2.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libct.so.4()(64bit) for package: freetds-devel-0.91-2.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libsybdb.so.5()(64bit) for package: freetds-devel-0.91-2.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libtdsodbc.so.0()(64bit) for package: freetds-devel-0.91-2.el6.x86_64
+DEBUG util.py:492:  ---> Package freetype-devel.x86_64 0:2.3.11-17.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: freetype = 2.3.11-17.el6 for package: freetype-devel-2.3.11-17.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libfreetype.so.6()(64bit) for package: freetype-devel-2.3.11-17.el6.x86_64
+DEBUG util.py:492:  ---> Package gmp-devel.x86_64 0:4.3.1-13.el6 will be installed
+DEBUG util.py:492:  ---> Package httpd24u-devel.x86_64 0:2.4.35-1.ius.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: httpd24u = 2.4.35-1.ius.el6 for package: httpd24u-devel-2.4.35-1.ius.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: apr15u-devel >= 1.5.0 for package: httpd24u-devel-2.4.35-1.ius.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: apr15u-util-devel >= 1.5.0 for package: httpd24u-devel-2.4.35-1.ius.el6.x86_64
+DEBUG util.py:492:  ---> Package krb5-devel.x86_64 0:1.10.3-65.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libkadm5(x86-64) = 1.10.3-65.el6 for package: krb5-devel-1.10.3-65.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libselinux-devel for package: krb5-devel-1.10.3-65.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libcom_err-devel for package: krb5-devel-1.10.3-65.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.10.3-65.el6.x86_64
+DEBUG util.py:492:  ---> Package libXpm-devel.x86_64 0:3.5.10-2.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libXpm = 3.5.10-2.el6 for package: libXpm-devel-3.5.10-2.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: pkgconfig(x11) for package: libXpm-devel-3.5.10-2.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libXt.so.6()(64bit) for package: libXpm-devel-3.5.10-2.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libXpm.so.4()(64bit) for package: libXpm-devel-3.5.10-2.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libXext.so.6()(64bit) for package: libXpm-devel-3.5.10-2.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libX11.so.6()(64bit) for package: libXpm-devel-3.5.10-2.el6.x86_64
+DEBUG util.py:492:  ---> Package libacl-devel.x86_64 0:2.2.49-7.el6_9.1 will be installed
+DEBUG util.py:492:  --> Processing Dependency: nfs-utils-lib for package: libacl-devel-2.2.49-7.el6_9.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libattr-devel for package: libacl-devel-2.2.49-7.el6_9.1.x86_64
+DEBUG util.py:492:  ---> Package libc-client-devel.x86_64 0:2007e-11.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libc-client = 2007e-11.el6 for package: libc-client-devel-2007e-11.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libc-client.so.2007()(64bit) for package: libc-client-devel-2007e-11.el6.x86_64
+DEBUG util.py:492:  ---> Package libcurl-devel.x86_64 0:7.19.7-53.el6_9 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libidn-devel for package: libcurl-devel-7.19.7-53.el6_9.x86_64
+DEBUG util.py:492:  --> Processing Dependency: automake for package: libcurl-devel-7.19.7-53.el6_9.x86_64
+DEBUG util.py:492:  ---> Package libedit-devel.x86_64 0:2.11-4.20080712cvs.1.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libedit = 2.11-4.20080712cvs.1.el6 for package: libedit-devel-2.11-4.20080712cvs.1.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: ncurses-devel for package: libedit-devel-2.11-4.20080712cvs.1.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libedit.so.0()(64bit) for package: libedit-devel-2.11-4.20080712cvs.1.el6.x86_64
+DEBUG util.py:492:  ---> Package libicu-devel.x86_64 0:4.2.1-14.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libicu(x86-64) = 4.2.1-14.el6 for package: libicu-devel-4.2.1-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libicuuc.so.42()(64bit) for package: libicu-devel-4.2.1-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libicutu.so.42()(64bit) for package: libicu-devel-4.2.1-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libiculx.so.42()(64bit) for package: libicu-devel-4.2.1-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libicule.so.42()(64bit) for package: libicu-devel-4.2.1-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libicuio.so.42()(64bit) for package: libicu-devel-4.2.1-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libicui18n.so.42()(64bit) for package: libicu-devel-4.2.1-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libicudata.so.42()(64bit) for package: libicu-devel-4.2.1-14.el6.x86_64
+DEBUG util.py:492:  ---> Package libjpeg-turbo-devel.x86_64 0:1.2.1-3.el6_5 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libjpeg-turbo(x86-64) = 1.2.1-3.el6_5 for package: libjpeg-turbo-devel-1.2.1-3.el6_5.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libjpeg.so.62()(64bit) for package: libjpeg-turbo-devel-1.2.1-3.el6_5.x86_64
+DEBUG util.py:492:  ---> Package libmcrypt-devel.x86_64 0:2.5.8-9.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libmcrypt = 2.5.8-9.el6 for package: libmcrypt-devel-2.5.8-9.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libmcrypt.so.4()(64bit) for package: libmcrypt-devel-2.5.8-9.el6.x86_64
+DEBUG util.py:492:  ---> Package libpng-devel.x86_64 2:1.2.49-2.el6_7 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libpng = 2:1.2.49-2.el6_7 for package: 2:libpng-devel-1.2.49-2.el6_7.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libpng12.so.0()(64bit) for package: 2:libpng-devel-1.2.49-2.el6_7.x86_64
+DEBUG util.py:492:  ---> Package libtidy-devel.x86_64 0:0.99.0-19.20070615.1.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libtidy = 0.99.0-19.20070615.1.el6 for package: libtidy-devel-0.99.0-19.20070615.1.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libtidy-0.99.so.0()(64bit) for package: libtidy-devel-0.99.0-19.20070615.1.el6.x86_64
+DEBUG util.py:492:  ---> Package libtool.x86_64 0:2.2.6-15.5.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: autoconf >= 2.58 for package: libtool-2.2.6-15.5.el6.x86_64
+DEBUG util.py:492:  ---> Package libtool-ltdl-devel.x86_64 0:2.2.6-15.5.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libtool-ltdl = 2.2.6-15.5.el6 for package: libtool-ltdl-devel-2.2.6-15.5.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libltdl.so.7()(64bit) for package: libtool-ltdl-devel-2.2.6-15.5.el6.x86_64
+DEBUG util.py:492:  ---> Package libvpx-devel.x86_64 0:1.3.0-5.el6_5 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libvpx(x86-64) = 1.3.0-5.el6_5 for package: libvpx-devel-1.3.0-5.el6_5.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libvpx.so.1()(64bit) for package: libvpx-devel-1.3.0-5.el6_5.x86_64
+DEBUG util.py:492:  ---> Package libxml2-devel.x86_64 0:2.7.6-21.el6_8.1 will be installed
+DEBUG util.py:492:  ---> Package libxslt-devel.x86_64 0:1.1.26-2.el6_3.1 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libxslt = 1.1.26-2.el6_3.1 for package: libxslt-devel-1.1.26-2.el6_3.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libgcrypt-devel for package: libxslt-devel-1.1.26-2.el6_3.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libxslt.so.1()(64bit) for package: libxslt-devel-1.1.26-2.el6_3.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libexslt.so.0()(64bit) for package: libxslt-devel-1.1.26-2.el6_3.1.x86_64
+DEBUG util.py:492:  ---> Package net-snmp-devel.x86_64 1:5.5-60.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: net-snmp-libs = 1:5.5-60.el6 for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: tcp_wrappers-devel for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: rpm-devel for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: lm_sensors-devel for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: elfutils-libelf-devel for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: elfutils-devel for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libsnmp.so.20()(64bit) for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libnetsnmptrapd.so.20()(64bit) for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libnetsnmpmibs.so.20()(64bit) for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libnetsnmphelpers.so.20()(64bit) for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libnetsnmpagent.so.20()(64bit) for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libnetsnmp.so.20()(64bit) for package: 1:net-snmp-devel-5.5-60.el6.x86_64
+DEBUG util.py:492:  ---> Package openldap-devel.x86_64 0:2.4.40-16.el6 will be installed
+DEBUG util.py:492:  ---> Package openssl-devel.x86_64 0:1.0.1e-57.el6 will be installed
+DEBUG util.py:492:  ---> Package pam-devel.x86_64 0:1.1.1-24.el6 will be installed
+DEBUG util.py:492:  ---> Package postgresql-devel.x86_64 0:8.4.20-8.el6_9 will be installed
+DEBUG util.py:492:  --> Processing Dependency: postgresql-libs(x86-64) = 8.4.20-8.el6_9 for package: postgresql-devel-8.4.20-8.el6_9.x86_64
+DEBUG util.py:492:  --> Processing Dependency: postgresql(x86-64) = 8.4.20-8.el6_9 for package: postgresql-devel-8.4.20-8.el6_9.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libpq.so.5()(64bit) for package: postgresql-devel-8.4.20-8.el6_9.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libpgtypes.so.3()(64bit) for package: postgresql-devel-8.4.20-8.el6_9.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libecpg_compat.so.3()(64bit) for package: postgresql-devel-8.4.20-8.el6_9.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libecpg.so.6()(64bit) for package: postgresql-devel-8.4.20-8.el6_9.x86_64
+DEBUG util.py:492:  ---> Package recode-devel.x86_64 0:3.6-28.1.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: recode = 3.6-28.1.el6 for package: recode-devel-3.6-28.1.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: librecode.so.0()(64bit) for package: recode-devel-3.6-28.1.el6.x86_64
+DEBUG util.py:492:  ---> Package sqlite-devel.x86_64 0:3.6.20-1.el6_7.2 will be installed
+DEBUG util.py:492:  ---> Package ssmtp.x86_64 0:2.61-22.el6 will be installed
+DEBUG util.py:492:  ---> Package systemtap-sdt-devel.x86_64 0:2.9-9.el6 will be installed
+DEBUG util.py:492:  ---> Package t1lib-devel.x86_64 0:5.1.2-6.el6_2.1 will be installed
+DEBUG util.py:492:  --> Processing Dependency: t1lib = 5.1.2-6.el6_2.1 for package: t1lib-devel-5.1.2-6.el6_2.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libt1x.so.5()(64bit) for package: t1lib-devel-5.1.2-6.el6_2.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libt1.so.5()(64bit) for package: t1lib-devel-5.1.2-6.el6_2.1.x86_64
+DEBUG util.py:492:  ---> Package tokyocabinet-devel.x86_64 0:1.4.33-6.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: tokyocabinet = 1.4.33-6.el6 for package: tokyocabinet-devel-1.4.33-6.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libtokyocabinet.so.8()(64bit) for package: tokyocabinet-devel-1.4.33-6.el6.x86_64
+DEBUG util.py:492:  ---> Package unixODBC-devel.x86_64 0:2.2.14-14.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: unixODBC = 2.2.14-14.el6 for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libtemplate.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libtdsS.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libsapdbS.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: liboraodbcS.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: liboplodbcS.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libodbctxtS.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libodbcnnS.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libodbcminiS.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libodbcdrvcfg2S.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libodbcdrvcfg1S.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libodbccr.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libnn.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libmimerS.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libgtrtst.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libesoobS.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libboundparam.so.2()(64bit) for package: unixODBC-devel-2.2.14-14.el6.x86_64
+DEBUG util.py:492:  ---> Package zlib-devel.x86_64 0:1.2.3-29.el6 will be installed
+DEBUG util.py:492:  --> Running transaction check
+DEBUG util.py:492:  ---> Package apr15u-devel.x86_64 0:1.5.2-2.ius.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: apr15u = 1.5.2-2.ius.el6 for package: apr15u-devel-1.5.2-2.ius.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libapr15u-1.so.0()(64bit) for package: apr15u-devel-1.5.2-2.ius.el6.x86_64
+DEBUG util.py:492:  ---> Package apr15u-util-devel.x86_64 0:1.5.4-3.ius.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: apr15u-util(x86-64) = 1.5.4-3.ius.el6 for package: apr15u-util-devel-1.5.4-3.ius.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: expat-devel(x86-64) for package: apr15u-util-devel-1.5.4-3.ius.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libapr15uutil-1.so.0()(64bit) for package: apr15u-util-devel-1.5.4-3.ius.el6.x86_64
+DEBUG util.py:492:  ---> Package aspell.x86_64 12:0.60.6-12.el6 will be installed
+DEBUG util.py:492:  ---> Package autoconf.noarch 0:2.63-5.1.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: m4 >= 1.4.7 for package: autoconf-2.63-5.1.el6.noarch
+DEBUG util.py:492:  ---> Package automake.noarch 0:1.11.1-4.el6 will be installed
+DEBUG util.py:492:  ---> Package cyrus-sasl.x86_64 0:2.1.23-15.el6_6.2 will be installed
+DEBUG util.py:492:  ---> Package db4-cxx.x86_64 0:4.7.25-22.el6 will be installed
+DEBUG util.py:492:  ---> Package elfutils-devel.x86_64 0:0.164-2.el6 will be installed
+DEBUG util.py:492:  ---> Package elfutils-libelf-devel.x86_64 0:0.164-2.el6 will be installed
+DEBUG util.py:492:  ---> Package enchant.x86_64 1:1.5.0-5.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libhunspell-1.2.so.0()(64bit) for package: 1:enchant-1.5.0-5.el6.x86_64
+DEBUG util.py:492:  ---> Package firebird-libfbclient.x86_64 0:2.5.7.27050.0-1.el6 will be installed
+DEBUG util.py:492:  ---> Package firebird-libfbembed.x86_64 0:2.5.7.27050.0-1.el6 will be installed
+DEBUG util.py:492:  ---> Package freetds.x86_64 0:0.91-2.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libgcrypt.so.11(GCRYPT_1.2)(64bit) for package: freetds-0.91-2.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libgnutls.so.26(GNUTLS_1_4)(64bit) for package: freetds-0.91-2.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libgcrypt.so.11()(64bit) for package: freetds-0.91-2.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libgnutls.so.26()(64bit) for package: freetds-0.91-2.el6.x86_64
+DEBUG util.py:492:  ---> Package freetype.x86_64 0:2.3.11-17.el6 will be installed
+DEBUG util.py:492:  ---> Package glib2-devel.x86_64 0:2.28.8-10.el6 will be installed
+DEBUG util.py:492:  ---> Package httpd24u.x86_64 0:2.4.35-1.ius.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: httpd24u-tools = 2.4.35-1.ius.el6 for package: httpd24u-2.4.35-1.ius.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: httpd24u-filesystem = 2.4.35-1.ius.el6 for package: httpd24u-2.4.35-1.ius.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: httpd24u-filesystem = 2.4.35-1.ius.el6 for package: httpd24u-2.4.35-1.ius.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: /etc/mime.types for package: httpd24u-2.4.35-1.ius.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libnghttp2.so.14()(64bit) for package: httpd24u-2.4.35-1.ius.el6.x86_64
+DEBUG util.py:492:  ---> Package keyutils-libs-devel.x86_64 0:1.4-5.el6 will be installed
+DEBUG util.py:492:  ---> Package libX11.x86_64 0:1.6.4-3.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libX11-common = 1.6.4-3.el6 for package: libX11-1.6.4-3.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libxcb.so.1()(64bit) for package: libX11-1.6.4-3.el6.x86_64
+DEBUG util.py:492:  ---> Package libX11-devel.x86_64 0:1.6.4-3.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: pkgconfig(xcb) >= 1.11.1 for package: libX11-devel-1.6.4-3.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: pkgconfig(xproto) for package: libX11-devel-1.6.4-3.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: pkgconfig(xcb) for package: libX11-devel-1.6.4-3.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: pkgconfig(kbproto) for package: libX11-devel-1.6.4-3.el6.x86_64
+DEBUG util.py:492:  ---> Package libXext.x86_64 0:1.3.3-1.el6 will be installed
+DEBUG util.py:492:  ---> Package libXpm.x86_64 0:3.5.10-2.el6 will be installed
+DEBUG util.py:492:  ---> Package libXt.x86_64 0:1.1.4-6.1.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libSM.so.6()(64bit) for package: libXt-1.1.4-6.1.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libICE.so.6()(64bit) for package: libXt-1.1.4-6.1.el6.x86_64
+DEBUG util.py:492:  ---> Package libattr-devel.x86_64 0:2.4.44-7.el6 will be installed
+DEBUG util.py:492:  ---> Package libc-client.x86_64 0:2007e-11.el6 will be installed
+DEBUG util.py:492:  ---> Package libcom_err-devel.x86_64 0:1.41.12-24.el6 will be installed
+DEBUG util.py:492:  ---> Package libedit.x86_64 0:2.11-4.20080712cvs.1.el6 will be installed
+DEBUG util.py:492:  ---> Package libgcrypt-devel.x86_64 0:1.4.5-12.el6_8 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libgpg-error-devel for package: libgcrypt-devel-1.4.5-12.el6_8.x86_64
+DEBUG util.py:492:  ---> Package libicu.x86_64 0:4.2.1-14.el6 will be installed
+DEBUG util.py:492:  ---> Package libidn-devel.x86_64 0:1.18-2.el6 will be installed
+DEBUG util.py:492:  ---> Package libjpeg-turbo.x86_64 0:1.2.1-3.el6_5 will be installed
+DEBUG util.py:492:  ---> Package libkadm5.x86_64 0:1.10.3-65.el6 will be installed
+DEBUG util.py:492:  ---> Package libmcrypt.x86_64 0:2.5.8-9.el6 will be installed
+DEBUG util.py:492:  ---> Package libpng.x86_64 2:1.2.49-2.el6_7 will be installed
+DEBUG util.py:492:  ---> Package libselinux-devel.x86_64 0:2.0.94-7.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libsepol-devel >= 2.0.32-1 for package: libselinux-devel-2.0.94-7.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.0.94-7.el6.x86_64
+DEBUG util.py:492:  ---> Package libtidy.x86_64 0:0.99.0-19.20070615.1.el6 will be installed
+DEBUG util.py:492:  ---> Package libtool-ltdl.x86_64 0:2.2.6-15.5.el6 will be installed
+DEBUG util.py:492:  ---> Package libvpx.x86_64 0:1.3.0-5.el6_5 will be installed
+DEBUG util.py:492:  ---> Package libxslt.x86_64 0:1.1.26-2.el6_3.1 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libgpg-error.so.0()(64bit) for package: libxslt-1.1.26-2.el6_3.1.x86_64
+DEBUG util.py:492:  ---> Package lm_sensors-devel.x86_64 0:3.1.1-17.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: lm_sensors-libs(x86-64) = 3.1.1-17.el6 for package: lm_sensors-devel-3.1.1-17.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libsensors.so.4()(64bit) for package: lm_sensors-devel-3.1.1-17.el6.x86_64
+DEBUG util.py:492:  ---> Package ncurses-devel.x86_64 0:5.7-4.20090207.el6 will be installed
+DEBUG util.py:492:  ---> Package net-snmp-libs.x86_64 1:5.5-60.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libwrap.so.0()(64bit) for package: 1:net-snmp-libs-5.5-60.el6.x86_64
+DEBUG util.py:492:  ---> Package nfs-utils-lib.x86_64 0:1.1.5-13.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: nfs-utils >= 1.2.1-11 for package: nfs-utils-lib-1.1.5-13.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libgssglue.so.1(libgssapi_CITI_2)(64bit) for package: nfs-utils-lib-1.1.5-13.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libgssglue for package: nfs-utils-lib-1.1.5-13.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libgssglue.so.1()(64bit) for package: nfs-utils-lib-1.1.5-13.el6.x86_64
+DEBUG util.py:492:  ---> Package postgresql.x86_64 0:8.4.20-8.el6_9 will be installed
+DEBUG util.py:492:  ---> Package postgresql-libs.x86_64 0:8.4.20-8.el6_9 will be installed
+DEBUG util.py:492:  ---> Package recode.x86_64 0:3.6-28.1.el6 will be installed
+DEBUG util.py:492:  ---> Package rpm-devel.x86_64 0:4.8.0-59.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: popt-devel(x86-64) for package: rpm-devel-4.8.0-59.el6.x86_64
+DEBUG util.py:492:  --> Processing Dependency: file-devel(x86-64) for package: rpm-devel-4.8.0-59.el6.x86_64
+DEBUG util.py:492:  ---> Package t1lib.x86_64 0:5.1.2-6.el6_2.1 will be installed
+DEBUG util.py:492:  ---> Package tcp_wrappers-devel.x86_64 0:7.6-58.el6 will be installed
+DEBUG util.py:492:  ---> Package tokyocabinet.x86_64 0:1.4.33-6.el6 will be installed
+DEBUG util.py:492:  ---> Package unixODBC.x86_64 0:2.2.14-14.el6 will be installed
+DEBUG util.py:492:  --> Running transaction check
+DEBUG util.py:492:  ---> Package apr15u.x86_64 0:1.5.2-2.ius.el6 will be installed
+DEBUG util.py:492:  ---> Package apr15u-util.x86_64 0:1.5.4-3.ius.el6 will be installed
+DEBUG util.py:492:  ---> Package expat-devel.x86_64 0:2.0.1-13.el6_8 will be installed
+DEBUG util.py:492:  ---> Package file-devel.x86_64 0:5.04-30.el6 will be installed
+DEBUG util.py:492:  ---> Package gnutls.x86_64 0:2.12.23-22.el6 will be installed
+DEBUG util.py:492:  ---> Package httpd24u-filesystem.noarch 0:2.4.35-1.ius.el6 will be installed
+DEBUG util.py:492:  ---> Package httpd24u-tools.x86_64 0:2.4.35-1.ius.el6 will be installed
+DEBUG util.py:492:  ---> Package hunspell.x86_64 0:1.2.8-16.el6 will be installed
+DEBUG util.py:492:  ---> Package libICE.x86_64 0:1.0.6-1.el6 will be installed
+DEBUG util.py:492:  ---> Package libSM.x86_64 0:1.2.1-2.el6 will be installed
+DEBUG util.py:492:  ---> Package libX11-common.noarch 0:1.6.4-3.el6 will be installed
+DEBUG util.py:492:  ---> Package libgcrypt.x86_64 0:1.4.5-12.el6_8 will be installed
+DEBUG util.py:492:  ---> Package libgpg-error.x86_64 0:1.7-4.el6 will be installed
+DEBUG util.py:492:  ---> Package libgpg-error-devel.x86_64 0:1.7-4.el6 will be installed
+DEBUG util.py:492:  ---> Package libgssglue.x86_64 0:0.1-11.el6 will be installed
+DEBUG util.py:492:  ---> Package libnghttp2.x86_64 0:1.6.0-1.el6.1 will be installed
+DEBUG util.py:492:  ---> Package libsepol-devel.x86_64 0:2.0.41-4.el6 will be installed
+DEBUG util.py:492:  ---> Package libxcb.x86_64 0:1.12-4.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libXau.so.6()(64bit) for package: libxcb-1.12-4.el6.x86_64
+DEBUG util.py:492:  ---> Package libxcb-devel.x86_64 0:1.12-4.el6 will be installed
+DEBUG util.py:492:  --> Processing Dependency: pkgconfig(xau) >= 0.99.2 for package: libxcb-devel-1.12-4.el6.x86_64
+DEBUG util.py:492:  ---> Package lm_sensors-libs.x86_64 0:3.1.1-17.el6 will be installed
+DEBUG util.py:492:  ---> Package m4.x86_64 0:1.4.13-5.el6 will be installed
+DEBUG util.py:492:  ---> Package mailcap.noarch 0:2.1.31-2.el6 will be installed
+DEBUG util.py:492:  ---> Package nfs-utils.x86_64 1:1.2.3-78.el6_10.1 will be installed
+DEBUG util.py:492:  --> Processing Dependency: libtirpc >= 0.2.1-11 for package: 1:nfs-utils-1.2.3-78.el6_10.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: keyutils >= 1.4-4 for package: 1:nfs-utils-1.2.3-78.el6_10.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: rpcbind for package: 1:nfs-utils-1.2.3-78.el6_10.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: python-argparse for package: 1:nfs-utils-1.2.3-78.el6_10.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libevent for package: 1:nfs-utils-1.2.3-78.el6_10.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libtirpc.so.1()(64bit) for package: 1:nfs-utils-1.2.3-78.el6_10.1.x86_64
+DEBUG util.py:492:  --> Processing Dependency: libevent-1.4.so.2()(64bit) for package: 1:nfs-utils-1.2.3-78.el6_10.1.x86_64
+DEBUG util.py:492:  ---> Package popt-devel.x86_64 0:1.13-7.el6 will be installed
+DEBUG util.py:492:  ---> Package tcp_wrappers-libs.x86_64 0:7.6-58.el6 will be installed
+DEBUG util.py:492:  ---> Package xorg-x11-proto-devel.noarch 0:7.7-14.el6 will be installed
+DEBUG util.py:492:  --> Running transaction check
+DEBUG util.py:492:  ---> Package keyutils.x86_64 0:1.4-5.el6 will be installed
+DEBUG util.py:492:  ---> Package libXau.x86_64 0:1.0.6-4.el6 will be installed
+DEBUG util.py:492:  ---> Package libXau-devel.x86_64 0:1.0.6-4.el6 will be installed
+DEBUG util.py:492:  ---> Package libevent.x86_64 0:1.4.13-4.el6 will be installed
+DEBUG util.py:492:  ---> Package libtirpc.x86_64 0:0.2.1-15.el6 will be installed
+DEBUG util.py:492:  ---> Package python-argparse.noarch 0:1.2.1-2.1.el6 will be installed
+DEBUG util.py:492:  ---> Package rpcbind.x86_64 0:0.2.0-16.el6 will be installed
+DEBUG util.py:492:  --> Finished Dependency Resolution
+DEBUG util.py:492:  Dependencies Resolved
+DEBUG util.py:492:  =============================================================================================================================================================
+DEBUG util.py:492:   Package                                     Arch                         Version                                        Repository                     Size
+DEBUG util.py:492:  =============================================================================================================================================================
+DEBUG util.py:492:  Installing:
+DEBUG util.py:492:   aspell-devel                                x86_64                       12:0.60.6-12.el6                               base                           46 k
+DEBUG util.py:492:   bzip2-devel                                 x86_64                       1.0.5-7.el6_0                                  base                          250 k
+DEBUG util.py:492:   cyrus-sasl-devel                            x86_64                       2.1.23-15.el6_6.2                              base                          303 k
+DEBUG util.py:492:   db4-devel                                   x86_64                       4.7.25-22.el6                                  base                          6.6 M
+DEBUG util.py:492:   enchant-devel                               x86_64                       1:1.5.0-5.el6                                  base                           12 k
+DEBUG util.py:492:   firebird-devel                              x86_64                       2.5.7.27050.0-1.el6                            epel                           45 k
+DEBUG util.py:492:   freetds-devel                               x86_64                       0.91-2.el6                                     epel                           39 k
+DEBUG util.py:492:   freetype-devel                              x86_64                       2.3.11-17.el6                                  base                          365 k
+DEBUG util.py:492:   gmp-devel                                   x86_64                       4.3.1-13.el6                                   base                          171 k
+DEBUG util.py:492:   httpd24u-devel                              x86_64                       2.4.35-1.ius.el6                               ius                           207 k
+DEBUG util.py:492:   krb5-devel                                  x86_64                       1.10.3-65.el6                                  base                          504 k
+DEBUG util.py:492:   libXpm-devel                                x86_64                       3.5.10-2.el6                                   base                           33 k
+DEBUG util.py:492:   libacl-devel                                x86_64                       2.2.49-7.el6_9.1                               base                           87 k
+DEBUG util.py:492:   libc-client-devel                           x86_64                       2007e-11.el6                                   base                           56 k
+DEBUG util.py:492:   libcurl-devel                               x86_64                       7.19.7-53.el6_9                                base                          247 k
+DEBUG util.py:492:   libedit-devel                               x86_64                       2.11-4.20080712cvs.1.el6                       base                           26 k
+DEBUG util.py:492:   libicu-devel                                x86_64                       4.2.1-14.el6                                   base                          617 k
+DEBUG util.py:492:   libjpeg-turbo-devel                         x86_64                       1.2.1-3.el6_5                                  base                           96 k
+DEBUG util.py:492:   libmcrypt-devel                             x86_64                       2.5.8-9.el6                                    epel                           12 k
+DEBUG util.py:492:   libpng-devel                                x86_64                       2:1.2.49-2.el6_7                               base                          112 k
+DEBUG util.py:492:   libtidy-devel                               x86_64                       0.99.0-19.20070615.1.el6                       base                           97 k
+DEBUG util.py:492:   libtool                                     x86_64                       2.2.6-15.5.el6                                 base                          564 k
+DEBUG util.py:492:   libtool-ltdl-devel                          x86_64                       2.2.6-15.5.el6                                 base                          162 k
+DEBUG util.py:492:   libvpx-devel                                x86_64                       1.3.0-5.el6_5                                  base                          209 k
+DEBUG util.py:492:   libxml2-devel                               x86_64                       2.7.6-21.el6_8.1                               base                          1.1 M
+DEBUG util.py:492:   libxslt-devel                               x86_64                       1.1.26-2.el6_3.1                               base                          561 k
+DEBUG util.py:492:   net-snmp-devel                              x86_64                       1:5.5-60.el6                                   base                          307 k
+DEBUG util.py:492:   openldap-devel                              x86_64                       2.4.40-16.el6                                  base                          1.1 M
+DEBUG util.py:492:   openssl-devel                               x86_64                       1.0.1e-57.el6                                  base                          1.2 M
+DEBUG util.py:492:   pam-devel                                   x86_64                       1.1.1-24.el6                                   base                          205 k
+DEBUG util.py:492:   postgresql-devel                            x86_64                       8.4.20-8.el6_9                                 base                          816 k
+DEBUG util.py:492:   recode-devel                                x86_64                       3.6-28.1.el6                                   base                           14 k
+DEBUG util.py:492:   sqlite-devel                                x86_64                       3.6.20-1.el6_7.2                               base                           81 k
+DEBUG util.py:492:   ssmtp                                       x86_64                       2.61-22.el6                                    epel                           53 k
+DEBUG util.py:492:   systemtap-sdt-devel                         x86_64                       2.9-9.el6                                      base                           68 k
+DEBUG util.py:492:   t1lib-devel                                 x86_64                       5.1.2-6.el6_2.1                                base                          522 k
+DEBUG util.py:492:   tokyocabinet-devel                          x86_64                       1.4.33-6.el6                                   base                          477 k
+DEBUG util.py:492:   unixODBC-devel                              x86_64                       2.2.14-14.el6                                  base                           53 k
+DEBUG util.py:492:   zlib-devel                                  x86_64                       1.2.3-29.el6                                   base                           44 k
+DEBUG util.py:492:  Installing for dependencies:
+DEBUG util.py:492:   apr15u                                      x86_64                       1.5.2-2.ius.el6                                ius                           105 k
+DEBUG util.py:492:   apr15u-devel                                x86_64                       1.5.2-2.ius.el6                                ius                           186 k
+DEBUG util.py:492:   apr15u-util                                 x86_64                       1.5.4-3.ius.el6                                ius                            88 k
+DEBUG util.py:492:   apr15u-util-devel                           x86_64                       1.5.4-3.ius.el6                                ius                            77 k
+DEBUG util.py:492:   aspell                                      x86_64                       12:0.60.6-12.el6                               base                          648 k
+DEBUG util.py:492:   autoconf                                    noarch                       2.63-5.1.el6                                   base                          781 k
+DEBUG util.py:492:   automake                                    noarch                       1.11.1-4.el6                                   base                          550 k
+DEBUG util.py:492:   cyrus-sasl                                  x86_64                       2.1.23-15.el6_6.2                              base                           78 k
+DEBUG util.py:492:   db4-cxx                                     x86_64                       4.7.25-22.el6                                  base                          589 k
+DEBUG util.py:492:   elfutils-devel                              x86_64                       0.164-2.el6                                    base                           82 k
+DEBUG util.py:492:   elfutils-libelf-devel                       x86_64                       0.164-2.el6                                    base                           32 k
+DEBUG util.py:492:   enchant                                     x86_64                       1:1.5.0-5.el6                                  base                           49 k
+DEBUG util.py:492:   expat-devel                                 x86_64                       2.0.1-13.el6_8                                 base                          119 k
+DEBUG util.py:492:   file-devel                                  x86_64                       5.04-30.el6                                    base                           28 k
+DEBUG util.py:492:   firebird-libfbclient                        x86_64                       2.5.7.27050.0-1.el6                            epel                          288 k
+DEBUG util.py:492:   firebird-libfbembed                         x86_64                       2.5.7.27050.0-1.el6                            epel                          1.6 M
+DEBUG util.py:492:   freetds                                     x86_64                       0.91-2.el6                                     epel                          568 k
+DEBUG util.py:492:   freetype                                    x86_64                       2.3.11-17.el6                                  base                          361 k
+DEBUG util.py:492:   glib2-devel                                 x86_64                       2.28.8-10.el6                                  base                          300 k
+DEBUG util.py:492:   gnutls                                      x86_64                       2.12.23-22.el6                                 base                          389 k
+DEBUG util.py:492:   httpd24u                                    x86_64                       2.4.35-1.ius.el6                               ius                           1.3 M
+DEBUG util.py:492:   httpd24u-filesystem                         noarch                       2.4.35-1.ius.el6                               ius                            25 k
+DEBUG util.py:492:   httpd24u-tools                              x86_64                       2.4.35-1.ius.el6                               ius                            83 k
+DEBUG util.py:492:   hunspell                                    x86_64                       1.2.8-16.el6                                   base                          177 k
+DEBUG util.py:492:   keyutils                                    x86_64                       1.4-5.el6                                      base                           39 k
+DEBUG util.py:492:   keyutils-libs-devel                         x86_64                       1.4-5.el6                                      base                           29 k
+DEBUG util.py:492:   libICE                                      x86_64                       1.0.6-1.el6                                    base                           53 k
+DEBUG util.py:492:   libSM                                       x86_64                       1.2.1-2.el6                                    base                           37 k
+DEBUG util.py:492:   libX11                                      x86_64                       1.6.4-3.el6                                    base                          587 k
+DEBUG util.py:492:   libX11-common                               noarch                       1.6.4-3.el6                                    base                          171 k
+DEBUG util.py:492:   libX11-devel                                x86_64                       1.6.4-3.el6                                    base                          983 k
+DEBUG util.py:492:   libXau                                      x86_64                       1.0.6-4.el6                                    base                           24 k
+DEBUG util.py:492:   libXau-devel                                x86_64                       1.0.6-4.el6                                    base                           14 k
+DEBUG util.py:492:   libXext                                     x86_64                       1.3.3-1.el6                                    base                           35 k
+DEBUG util.py:492:   libXpm                                      x86_64                       3.5.10-2.el6                                   base                           51 k
+DEBUG util.py:492:   libXt                                       x86_64                       1.1.4-6.1.el6                                  base                          165 k
+DEBUG util.py:492:   libattr-devel                               x86_64                       2.4.44-7.el6                                   base                           40 k
+DEBUG util.py:492:   libc-client                                 x86_64                       2007e-11.el6                                   base                          515 k
+DEBUG util.py:492:   libcom_err-devel                            x86_64                       1.41.12-24.el6                                 base                           33 k
+DEBUG util.py:492:   libedit                                     x86_64                       2.11-4.20080712cvs.1.el6                       base                           74 k
+DEBUG util.py:492:   libevent                                    x86_64                       1.4.13-4.el6                                   base                           66 k
+DEBUG util.py:492:   libgcrypt                                   x86_64                       1.4.5-12.el6_8                                 base                          229 k
+DEBUG util.py:492:   libgcrypt-devel                             x86_64                       1.4.5-12.el6_8                                 base                          118 k
+DEBUG util.py:492:   libgpg-error                                x86_64                       1.7-4.el6                                      base                           59 k
+DEBUG util.py:492:   libgpg-error-devel                          x86_64                       1.7-4.el6                                      base                           14 k
+DEBUG util.py:492:   libgssglue                                  x86_64                       0.1-11.el6                                     base                           23 k
+DEBUG util.py:492:   libicu                                      x86_64                       4.2.1-14.el6                                   base                          4.9 M
+DEBUG util.py:492:   libidn-devel                                x86_64                       1.18-2.el6                                     base                          137 k
+DEBUG util.py:492:   libjpeg-turbo                               x86_64                       1.2.1-3.el6_5                                  base                          174 k
+DEBUG util.py:492:   libkadm5                                    x86_64                       1.10.3-65.el6                                  base                          143 k
+DEBUG util.py:492:   libmcrypt                                   x86_64                       2.5.8-9.el6                                    epel                           96 k
+DEBUG util.py:492:   libnghttp2                                  x86_64                       1.6.0-1.el6.1                                  epel                           56 k
+DEBUG util.py:492:   libpng                                      x86_64                       2:1.2.49-2.el6_7                               base                          182 k
+DEBUG util.py:492:   libselinux-devel                            x86_64                       2.0.94-7.el6                                   base                          137 k
+DEBUG util.py:492:   libsepol-devel                              x86_64                       2.0.41-4.el6                                   base                           64 k
+DEBUG util.py:492:   libtidy                                     x86_64                       0.99.0-19.20070615.1.el6                       base                          127 k
+DEBUG util.py:492:   libtirpc                                    x86_64                       0.2.1-15.el6                                   base                           82 k
+DEBUG util.py:492:   libtool-ltdl                                x86_64                       2.2.6-15.5.el6                                 base                           44 k
+DEBUG util.py:492:   libvpx                                      x86_64                       1.3.0-5.el6_5                                  base                          486 k
+DEBUG util.py:492:   libxcb                                      x86_64                       1.12-4.el6                                     base                          180 k
+DEBUG util.py:492:   libxcb-devel                                x86_64                       1.12-4.el6                                     base                          1.1 M
+DEBUG util.py:492:   libxslt                                     x86_64                       1.1.26-2.el6_3.1                               base                          452 k
+DEBUG util.py:492:   lm_sensors-devel                            x86_64                       3.1.1-17.el6                                   base                           22 k
+DEBUG util.py:492:   lm_sensors-libs                             x86_64                       3.1.1-17.el6                                   base                           38 k
+DEBUG util.py:492:   m4                                          x86_64                       1.4.13-5.el6                                   base                          278 k
+DEBUG util.py:492:   mailcap                                     noarch                       2.1.31-2.el6                                   base                           27 k
+DEBUG util.py:492:   ncurses-devel                               x86_64                       5.7-4.20090207.el6                             base                          641 k
+DEBUG util.py:492:   net-snmp-libs                               x86_64                       1:5.5-60.el6                                   base                          1.5 M
+DEBUG util.py:492:   nfs-utils                                   x86_64                       1:1.2.3-78.el6_10.1                            updates                       337 k
+DEBUG util.py:492:   nfs-utils-lib                               x86_64                       1.1.5-13.el6                                   base                           71 k
+DEBUG util.py:492:   popt-devel                                  x86_64                       1.13-7.el6                                     base                           21 k
+DEBUG util.py:492:   postgresql                                  x86_64                       8.4.20-8.el6_9                                 base                          2.6 M
+DEBUG util.py:492:   postgresql-libs                             x86_64                       8.4.20-8.el6_9                                 base                          202 k
+DEBUG util.py:492:   python-argparse                             noarch                       1.2.1-2.1.el6                                  base                           48 k
+DEBUG util.py:492:   recode                                      x86_64                       3.6-28.1.el6                                   base                          712 k
+DEBUG util.py:492:   rpcbind                                     x86_64                       0.2.0-16.el6                                   base                           51 k
+DEBUG util.py:492:   rpm-devel                                   x86_64                       4.8.0-59.el6                                   base                           97 k
+DEBUG util.py:492:   t1lib                                       x86_64                       5.1.2-6.el6_2.1                                base                          160 k
+DEBUG util.py:492:   tcp_wrappers-devel                          x86_64                       7.6-58.el6                                     base                           15 k
+DEBUG util.py:492:   tcp_wrappers-libs                           x86_64                       7.6-58.el6                                     base                           62 k
+DEBUG util.py:492:   tokyocabinet                                x86_64                       1.4.33-6.el6                                   base                          428 k
+DEBUG util.py:492:   unixODBC                                    x86_64                       2.2.14-14.el6                                  base                          378 k
+DEBUG util.py:492:   xorg-x11-proto-devel                        noarch                       7.7-14.el6                                     base                          288 k
+DEBUG util.py:492:  Transaction Summary
+DEBUG util.py:492:  =============================================================================================================================================================
+DEBUG util.py:492:  Install  39 Packages (+83 Dependent packages)
+DEBUG util.py:492:  Total size: 45 M
+DEBUG util.py:492:  Installed size: 162 M
+DEBUG util.py:492:  Downloading packages:
+DEBUG util.py:492:  Running transaction check
+DEBUG util.py:492:  Running transaction test
+DEBUG util.py:492:  Transaction test succeeded
+DEBUG util.py:492:  Running transaction
+DEBUG util.py:492:    Installing : apr15u-1.5.2-2.ius.el6.x86_64                                                                                                           1/122 
+DEBUG util.py:492:    Installing : libgssglue-0.1-11.el6.x86_64                                                                                                            2/122 
+DEBUG util.py:492:    Installing : tcp_wrappers-libs-7.6-58.el6.x86_64                                                                                                     3/122 
+DEBUG util.py:492:    Installing : libgpg-error-1.7-4.el6.x86_64                                                                                                           4/122 
+DEBUG util.py:492:    Installing : libgcrypt-1.4.5-12.el6_8.x86_64                                                                                                         5/122 
+DEBUG util.py:492:    Installing : zlib-devel-1.2.3-29.el6.x86_64                                                                                                          6/122 
+DEBUG util.py:492:    Installing : apr15u-util-1.5.4-3.ius.el6.x86_64                                                                                                      7/122 
+DEBUG util.py:492:    Installing : libtirpc-0.2.1-15.el6.x86_64                                                                                                            8/122 
+DEBUG util.py:492:    Installing : apr15u-devel-1.5.2-2.ius.el6.x86_64                                                                                                     9/122 
+DEBUG util.py:492:    Installing : elfutils-libelf-devel-0.164-2.el6.x86_64                                                                                               10/122 
+DEBUG util.py:492:    Installing : libICE-1.0.6-1.el6.x86_64                                                                                                              11/122 
+DEBUG util.py:492:    Installing : lm_sensors-libs-3.1.1-17.el6.x86_64                                                                                                    12/122 
+DEBUG util.py:492:    Installing : postgresql-libs-8.4.20-8.el6_9.x86_64                                                                                                  13/122 
+DEBUG util.py:492:    Installing : libXau-1.0.6-4.el6.x86_64                                                                                                              14/122 
+DEBUG util.py:492:    Installing : libxcb-1.12-4.el6.x86_64                                                                                                               15/122 
+DEBUG util.py:492:    Installing : xorg-x11-proto-devel-7.7-14.el6.noarch                                                                                                 16/122 
+DEBUG util.py:492:    Installing : libtool-ltdl-2.2.6-15.5.el6.x86_64                                                                                                     17/122 
+DEBUG util.py:492:    Installing : unixODBC-2.2.14-14.el6.x86_64                                                                                                          18/122 
+DEBUG util.py:492:    Installing : libicu-4.2.1-14.el6.x86_64                                                                                                             19/122 
+DEBUG util.py:492:    Installing : firebird-libfbembed-2.5.7.27050.0-1.el6.x86_64                                                                                         20/122 
+DEBUG util.py:492:    Installing : libXau-devel-1.0.6-4.el6.x86_64                                                                                                        21/122 
+DEBUG util.py:492:    Installing : libxcb-devel-1.12-4.el6.x86_64                                                                                                         22/122 
+DEBUG util.py:492:    Installing : postgresql-8.4.20-8.el6_9.x86_64                                                                                                       23/122 
+DEBUG util.py:492:    Installing : lm_sensors-devel-3.1.1-17.el6.x86_64                                                                                                   24/122 
+DEBUG util.py:492:    Installing : 1:net-snmp-libs-5.5-60.el6.x86_64                                                                                                      25/122 
+DEBUG util.py:492:    Installing : libSM-1.2.1-2.el6.x86_64                                                                                                               26/122 
+DEBUG util.py:492:    Installing : elfutils-devel-0.164-2.el6.x86_64                                                                                                      27/122 
+DEBUG util.py:492:    Installing : rpcbind-0.2.0-16.el6.x86_64                                                                                                            28/122 
+DEBUG util.py:492:    Installing : httpd24u-tools-2.4.35-1.ius.el6.x86_64                                                                                                 29/122 
+DEBUG util.py:492:    Installing : libxml2-devel-2.7.6-21.el6_8.1.x86_64                                                                                                  30/122 
+DEBUG util.py:492:    Installing : gnutls-2.12.23-22.el6.x86_64                                                                                                           31/122 
+DEBUG util.py:492:    Installing : freetds-0.91-2.el6.x86_64                                                                                                              32/122 
+DEBUG util.py:492:    Installing : libxslt-1.1.26-2.el6_3.1.x86_64                                                                                                        33/122 
+DEBUG util.py:492:    Installing : libgpg-error-devel-1.7-4.el6.x86_64                                                                                                    34/122 
+DEBUG util.py:492:    Installing : libgcrypt-devel-1.4.5-12.el6_8.x86_64                                                                                                  35/122 
+DEBUG util.py:492:    Installing : tcp_wrappers-devel-7.6-58.el6.x86_64                                                                                                   36/122 
+DEBUG util.py:492:    Installing : libkadm5-1.10.3-65.el6.x86_64                                                                                                          37/122 
+DEBUG util.py:492:    Installing : python-argparse-1.2.1-2.1.el6.noarch                                                                                                   38/122 
+DEBUG util.py:492:    Installing : libjpeg-turbo-1.2.1-3.el6_5.x86_64                                                                                                     39/122 
+DEBUG util.py:492:    Installing : recode-3.6-28.1.el6.x86_64                                                                                                             40/122 
+DEBUG util.py:492:    Installing : keyutils-1.4-5.el6.x86_64                                                                                                              41/122 
+DEBUG util.py:492:    Installing : ncurses-devel-5.7-4.20090207.el6.x86_64                                                                                                42/122 
+DEBUG util.py:492:    Installing : cyrus-sasl-2.1.23-15.el6_6.2.x86_64                                                                                                    43/122 
+DEBUG util.py:492:    Installing : cyrus-sasl-devel-2.1.23-15.el6_6.2.x86_64                                                                                              44/122 
+DEBUG util.py:492:    Installing : openldap-devel-2.4.40-16.el6.x86_64                                                                                                    45/122 
+DEBUG util.py:492:    Installing : keyutils-libs-devel-1.4-5.el6.x86_64                                                                                                   46/122 
+DEBUG util.py:492:    Installing : 2:libpng-1.2.49-2.el6_7.x86_64                                                                                                         47/122 
+DEBUG util.py:492:    Installing : glib2-devel-2.28.8-10.el6.x86_64                                                                                                       48/122 
+DEBUG util.py:492:    Installing : libmcrypt-2.5.8-9.el6.x86_64                                                                                                           49/122 
+DEBUG util.py:492:    Installing : libedit-2.11-4.20080712cvs.1.el6.x86_64                                                                                                50/122 
+DEBUG util.py:492:    Installing : libnghttp2-1.6.0-1.el6.1.x86_64                                                                                                        51/122 
+DEBUG util.py:492:    Installing : libidn-devel-1.18-2.el6.x86_64                                                                                                         52/122 
+DEBUG util.py:492:    Installing : libvpx-1.3.0-5.el6_5.x86_64                                                                                                            53/122 
+DEBUG util.py:492:    Installing : libc-client-2007e-11.el6.x86_64                                                                                                        54/122 
+DEBUG util.py:492:    Installing : mailcap-2.1.31-2.el6.noarch                                                                                                            55/122 
+DEBUG util.py:492:    Installing : libX11-common-1.6.4-3.el6.noarch                                                                                                       56/122 
+DEBUG util.py:492:    Installing : libX11-1.6.4-3.el6.x86_64                                                                                                              57/122 
+DEBUG util.py:492:    Installing : libXpm-3.5.10-2.el6.x86_64                                                                                                             58/122 
+DEBUG util.py:492:    Installing : t1lib-5.1.2-6.el6_2.1.x86_64                                                                                                           59/122 
+DEBUG util.py:492:    Installing : libXt-1.1.4-6.1.el6.x86_64                                                                                                             60/122 
+DEBUG util.py:492:    Installing : libX11-devel-1.6.4-3.el6.x86_64                                                                                                        61/122 
+DEBUG util.py:492:    Installing : libXext-1.3.3-1.el6.x86_64                                                                                                             62/122 
+DEBUG util.py:492:    Installing : libcom_err-devel-1.41.12-24.el6.x86_64                                                                                                 63/122 
+DEBUG util.py:492:    Installing : 12:aspell-0.60.6-12.el6.x86_64                                                                                                         64/122 
+DEBUG util.py:492:    Installing : hunspell-1.2.8-16.el6.x86_64                                                                                                           65/122 
+DEBUG util.py:492:    Installing : 1:enchant-1.5.0-5.el6.x86_64                                                                                                           66/122 
+DEBUG util.py:492:    Installing : tokyocabinet-1.4.33-6.el6.x86_64                                                                                                       67/122 
+DEBUG util.py:492:    Installing : httpd24u-filesystem-2.4.35-1.ius.el6.noarch                                                                                            68/122 
+DEBUG util.py:492:    Installing : httpd24u-2.4.35-1.ius.el6.x86_64                                                                                                       69/122 
+DEBUG util.py:492:    Installing : popt-devel-1.13-7.el6.x86_64                                                                                                           70/122 
+DEBUG util.py:492:    Installing : db4-cxx-4.7.25-22.el6.x86_64                                                                                                           71/122 
+DEBUG util.py:492:    Installing : db4-devel-4.7.25-22.el6.x86_64                                                                                                         72/122 
+DEBUG util.py:492:    Installing : freetype-2.3.11-17.el6.x86_64                                                                                                          73/122 
+DEBUG util.py:492:    Installing : libsepol-devel-2.0.41-4.el6.x86_64                                                                                                     74/122 
+DEBUG util.py:492:    Installing : libselinux-devel-2.0.94-7.el6.x86_64                                                                                                   75/122 
+DEBUG util.py:492:    Installing : krb5-devel-1.10.3-65.el6.x86_64                                                                                                        76/122 
+DEBUG util.py:492:    Installing : openssl-devel-1.0.1e-57.el6.x86_64                                                                                                     77/122 
+DEBUG util.py:492:    Installing : libattr-devel-2.4.44-7.el6.x86_64                                                                                                      78/122 
+DEBUG util.py:492:    Installing : libevent-1.4.13-4.el6.x86_64                                                                                                           79/122 
+DEBUG util.py:492:    Installing : nfs-utils-lib-1.1.5-13.el6.x86_64                                                                                                      80/122 
+DEBUG util.py:492:    Installing : 1:nfs-utils-1.2.3-78.el6_10.1.x86_64                                                                                                   81/122 
+DEBUG util.py:492:    Installing : file-devel-5.04-30.el6.x86_64                                                                                                          82/122 
+DEBUG util.py:492:    Installing : rpm-devel-4.8.0-59.el6.x86_64                                                                                                          83/122 
+DEBUG util.py:492:    Installing : expat-devel-2.0.1-13.el6_8.x86_64                                                                                                      84/122 
+DEBUG util.py:492:    Installing : apr15u-util-devel-1.5.4-3.ius.el6.x86_64                                                                                               85/122 
+DEBUG util.py:492:    Installing : m4-1.4.13-5.el6.x86_64                                                                                                                 86/122 
+DEBUG util.py:492:    Installing : autoconf-2.63-5.1.el6.noarch                                                                                                           87/122 
+DEBUG util.py:492:    Installing : automake-1.11.1-4.el6.noarch                                                                                                           88/122 
+DEBUG util.py:492:    Installing : libtidy-0.99.0-19.20070615.1.el6.x86_64                                                                                                89/122 
+DEBUG util.py:492:    Installing : firebird-libfbclient-2.5.7.27050.0-1.el6.x86_64                                                                                        90/122 
+DEBUG util.py:492:    Installing : firebird-devel-2.5.7.27050.0-1.el6.x86_64                                                                                              91/122 
+DEBUG util.py:492:    Installing : libtidy-devel-0.99.0-19.20070615.1.el6.x86_64                                                                                          92/122 
+DEBUG util.py:492:    Installing : libcurl-devel-7.19.7-53.el6_9.x86_64                                                                                                   93/122 
+DEBUG util.py:492:    Installing : libtool-2.2.6-15.5.el6.x86_64                                                                                                          94/122 
+DEBUG util.py:492:    Installing : httpd24u-devel-2.4.35-1.ius.el6.x86_64                                                                                                 95/122 
+DEBUG util.py:492:    Installing : 1:net-snmp-devel-5.5-60.el6.x86_64                                                                                                     96/122 
+DEBUG util.py:492:    Installing : libacl-devel-2.2.49-7.el6_9.1.x86_64                                                                                                   97/122 
+DEBUG util.py:492:    Installing : freetype-devel-2.3.11-17.el6.x86_64                                                                                                    98/122 
+DEBUG util.py:492:    Installing : tokyocabinet-devel-1.4.33-6.el6.x86_64                                                                                                 99/122 
+DEBUG util.py:492:    Installing : 1:enchant-devel-1.5.0-5.el6.x86_64                                                                                                    100/122 
+DEBUG util.py:492:    Installing : 12:aspell-devel-0.60.6-12.el6.x86_64                                                                                                  101/122 
+DEBUG util.py:492:    Installing : libXpm-devel-3.5.10-2.el6.x86_64                                                                                                      102/122 
+DEBUG util.py:492:    Installing : t1lib-devel-5.1.2-6.el6_2.1.x86_64                                                                                                    103/122 
+DEBUG util.py:492:    Installing : libc-client-devel-2007e-11.el6.x86_64                                                                                                 104/122 
+DEBUG util.py:492:    Installing : libvpx-devel-1.3.0-5.el6_5.x86_64                                                                                                     105/122 
+DEBUG util.py:492:    Installing : libedit-devel-2.11-4.20080712cvs.1.el6.x86_64                                                                                         106/122 
+DEBUG util.py:492:    Installing : libmcrypt-devel-2.5.8-9.el6.x86_64                                                                                                    107/122 
+DEBUG util.py:492:    Installing : 2:libpng-devel-1.2.49-2.el6_7.x86_64                                                                                                  108/122 
+DEBUG util.py:492:    Installing : recode-devel-3.6-28.1.el6.x86_64                                                                                                      109/122 
+DEBUG util.py:492:    Installing : libjpeg-turbo-devel-1.2.1-3.el6_5.x86_64                                                                                              110/122 
+DEBUG util.py:492:    Installing : libxslt-devel-1.1.26-2.el6_3.1.x86_64                                                                                                 111/122 
+DEBUG util.py:492:    Installing : freetds-devel-0.91-2.el6.x86_64                                                                                                       112/122 
+DEBUG util.py:492:    Installing : postgresql-devel-8.4.20-8.el6_9.x86_64                                                                                                113/122 
+DEBUG util.py:492:    Installing : libicu-devel-4.2.1-14.el6.x86_64                                                                                                      114/122 
+DEBUG util.py:492:    Installing : unixODBC-devel-2.2.14-14.el6.x86_64                                                                                                   115/122 
+DEBUG util.py:492:    Installing : libtool-ltdl-devel-2.2.6-15.5.el6.x86_64                                                                                              116/122 
+DEBUG util.py:492:    Installing : systemtap-sdt-devel-2.9-9.el6.x86_64                                                                                                  117/122 
+DEBUG util.py:492:    Installing : pam-devel-1.1.1-24.el6.x86_64                                                                                                         118/122 
+DEBUG util.py:492:    Installing : ssmtp-2.61-22.el6.x86_64                                                                                                              119/122 
+DEBUG util.py:492:    Installing : sqlite-devel-3.6.20-1.el6_7.2.x86_64                                                                                                  120/122 
+DEBUG util.py:492:    Installing : gmp-devel-4.3.1-13.el6.x86_64                                                                                                         121/122 
+DEBUG util.py:492:    Installing : bzip2-devel-1.0.5-7.el6_0.x86_64                                                                                                      122/122 
+DEBUG util.py:492:  warning: %posttrans(nfs-utils-1:1.2.3-78.el6_10.1.x86_64) scriptlet failed, exit status 6
+DEBUG util.py:490:  BUILDSTDERR: Non-fatal POSTTRANS scriptlet failure in rpm package 1:nfs-utils-1.2.3-78.el6_10.1.x86_64
+DEBUG util.py:492:    Verifying  : firebird-libfbclient-2.5.7.27050.0-1.el6.x86_64                                                                                         1/122 
+DEBUG util.py:492:    Verifying  : libtidy-0.99.0-19.20070615.1.el6.x86_64                                                                                                 2/122 
+DEBUG util.py:492:    Verifying  : krb5-devel-1.10.3-65.el6.x86_64                                                                                                         3/122 
+DEBUG util.py:492:    Verifying  : 1:enchant-1.5.0-5.el6.x86_64                                                                                                            4/122 
+DEBUG util.py:492:    Verifying  : libSM-1.2.1-2.el6.x86_64                                                                                                                5/122 
+DEBUG util.py:492:    Verifying  : bzip2-devel-1.0.5-7.el6_0.x86_64                                                                                                        6/122 
+DEBUG util.py:492:    Verifying  : m4-1.4.13-5.el6.x86_64                                                                                                                  7/122 
+DEBUG util.py:492:    Verifying  : apr15u-util-devel-1.5.4-3.ius.el6.x86_64                                                                                                8/122 
+DEBUG util.py:492:    Verifying  : gnutls-2.12.23-22.el6.x86_64                                                                                                            9/122 
+DEBUG util.py:492:    Verifying  : elfutils-devel-0.164-2.el6.x86_64                                                                                                      10/122 
+DEBUG util.py:492:    Verifying  : expat-devel-2.0.1-13.el6_8.x86_64                                                                                                      11/122 
+DEBUG util.py:492:    Verifying  : libxcb-devel-1.12-4.el6.x86_64                                                                                                         12/122 
+DEBUG util.py:492:    Verifying  : file-devel-5.04-30.el6.x86_64                                                                                                          13/122 
+DEBUG util.py:492:    Verifying  : zlib-devel-1.2.3-29.el6.x86_64                                                                                                         14/122 
+DEBUG util.py:492:    Verifying  : libevent-1.4.13-4.el6.x86_64                                                                                                           15/122 
+DEBUG util.py:492:    Verifying  : 1:net-snmp-devel-5.5-60.el6.x86_64                                                                                                     16/122 
+DEBUG util.py:492:    Verifying  : libattr-devel-2.4.44-7.el6.x86_64                                                                                                      17/122 
+DEBUG util.py:492:    Verifying  : cyrus-sasl-devel-2.1.23-15.el6_6.2.x86_64                                                                                              18/122 
+DEBUG util.py:492:    Verifying  : libedit-devel-2.11-4.20080712cvs.1.el6.x86_64                                                                                          19/122 
+DEBUG util.py:492:    Verifying  : apr15u-devel-1.5.2-2.ius.el6.x86_64                                                                                                    20/122 
+DEBUG util.py:492:    Verifying  : t1lib-devel-5.1.2-6.el6_2.1.x86_64                                                                                                     21/122 
+DEBUG util.py:492:    Verifying  : apr15u-util-1.5.4-3.ius.el6.x86_64                                                                                                     22/122 
+DEBUG util.py:492:    Verifying  : libsepol-devel-2.0.41-4.el6.x86_64                                                                                                     23/122 
+DEBUG util.py:492:    Verifying  : libselinux-devel-2.0.94-7.el6.x86_64                                                                                                   24/122 
+DEBUG util.py:492:    Verifying  : libxslt-devel-1.1.26-2.el6_3.1.x86_64                                                                                                  25/122 
+DEBUG util.py:492:    Verifying  : libgcrypt-devel-1.4.5-12.el6_8.x86_64                                                                                                  26/122 
+DEBUG util.py:492:    Verifying  : lm_sensors-devel-3.1.1-17.el6.x86_64                                                                                                   27/122 
+DEBUG util.py:492:    Verifying  : libgpg-error-1.7-4.el6.x86_64                                                                                                          28/122 
+DEBUG util.py:492:    Verifying  : libXau-devel-1.0.6-4.el6.x86_64                                                                                                        29/122 
+DEBUG util.py:492:    Verifying  : libXpm-3.5.10-2.el6.x86_64                                                                                                             30/122 
+DEBUG util.py:492:    Verifying  : nfs-utils-lib-1.1.5-13.el6.x86_64                                                                                                      31/122 
+DEBUG util.py:492:    Verifying  : freetype-2.3.11-17.el6.x86_64                                                                                                          32/122 
+DEBUG util.py:492:    Verifying  : 1:enchant-devel-1.5.0-5.el6.x86_64                                                                                                     33/122 
+DEBUG util.py:492:    Verifying  : freetype-devel-2.3.11-17.el6.x86_64                                                                                                    34/122 
+DEBUG util.py:492:    Verifying  : libc-client-devel-2007e-11.el6.x86_64                                                                                                  35/122 
+DEBUG util.py:492:    Verifying  : freetds-0.91-2.el6.x86_64                                                                                                              36/122 
+DEBUG util.py:492:    Verifying  : gmp-devel-4.3.1-13.el6.x86_64                                                                                                          37/122 
+DEBUG util.py:492:    Verifying  : firebird-devel-2.5.7.27050.0-1.el6.x86_64                                                                                              38/122 
+DEBUG util.py:492:    Verifying  : freetds-devel-0.91-2.el6.x86_64                                                                                                        39/122 
+DEBUG util.py:492:    Verifying  : openldap-devel-2.4.40-16.el6.x86_64                                                                                                    40/122 
+DEBUG util.py:492:    Verifying  : libicu-4.2.1-14.el6.x86_64                                                                                                             41/122 
+DEBUG util.py:492:    Verifying  : openssl-devel-1.0.1e-57.el6.x86_64                                                                                                     42/122 
+DEBUG util.py:492:    Verifying  : recode-devel-3.6-28.1.el6.x86_64                                                                                                       43/122 
+DEBUG util.py:492:    Verifying  : libcurl-devel-7.19.7-53.el6_9.x86_64                                                                                                   44/122 
+DEBUG util.py:492:    Verifying  : db4-cxx-4.7.25-22.el6.x86_64                                                                                                           45/122 
+DEBUG util.py:492:    Verifying  : libtool-ltdl-2.2.6-15.5.el6.x86_64                                                                                                     46/122 
+DEBUG util.py:492:    Verifying  : xorg-x11-proto-devel-7.7-14.el6.noarch                                                                                                 47/122 
+DEBUG util.py:492:    Verifying  : popt-devel-1.13-7.el6.x86_64                                                                                                           48/122 
+DEBUG util.py:492:    Verifying  : libtool-2.2.6-15.5.el6.x86_64                                                                                                          49/122 
+DEBUG util.py:492:    Verifying  : 1:nfs-utils-1.2.3-78.el6_10.1.x86_64                                                                                                   50/122 
+DEBUG util.py:492:    Verifying  : libvpx-devel-1.3.0-5.el6_5.x86_64                                                                                                      51/122 
+DEBUG util.py:492:    Verifying  : libXpm-devel-3.5.10-2.el6.x86_64                                                                                                       52/122 
+DEBUG util.py:492:    Verifying  : libXau-1.0.6-4.el6.x86_64                                                                                                              53/122 
+DEBUG util.py:492:    Verifying  : postgresql-8.4.20-8.el6_9.x86_64                                                                                                       54/122 
+DEBUG util.py:492:    Verifying  : httpd24u-filesystem-2.4.35-1.ius.el6.noarch                                                                                            55/122 
+DEBUG util.py:492:    Verifying  : libicu-devel-4.2.1-14.el6.x86_64                                                                                                       56/122 
+DEBUG util.py:492:    Verifying  : tokyocabinet-devel-1.4.33-6.el6.x86_64                                                                                                 57/122 
+DEBUG util.py:492:    Verifying  : tokyocabinet-1.4.33-6.el6.x86_64                                                                                                       58/122 
+DEBUG util.py:492:    Verifying  : libxml2-devel-2.7.6-21.el6_8.1.x86_64                                                                                                  59/122 
+DEBUG util.py:492:    Verifying  : libxslt-1.1.26-2.el6_3.1.x86_64                                                                                                        60/122 
+DEBUG util.py:492:    Verifying  : hunspell-1.2.8-16.el6.x86_64                                                                                                           61/122 
+DEBUG util.py:492:    Verifying  : t1lib-5.1.2-6.el6_2.1.x86_64                                                                                                           62/122 
+DEBUG util.py:492:    Verifying  : postgresql-devel-8.4.20-8.el6_9.x86_64                                                                                                 63/122 
+DEBUG util.py:492:    Verifying  : unixODBC-devel-2.2.14-14.el6.x86_64                                                                                                    64/122 
+DEBUG util.py:492:    Verifying  : 12:aspell-0.60.6-12.el6.x86_64                                                                                                         65/122 
+DEBUG util.py:492:    Verifying  : libjpeg-turbo-devel-1.2.1-3.el6_5.x86_64                                                                                               66/122 
+DEBUG util.py:492:    Verifying  : automake-1.11.1-4.el6.noarch                                                                                                           67/122 
+DEBUG util.py:492:    Verifying  : libcom_err-devel-1.41.12-24.el6.x86_64                                                                                                 68/122 
+DEBUG util.py:492:    Verifying  : libgpg-error-devel-1.7-4.el6.x86_64                                                                                                    69/122 
+DEBUG util.py:492:    Verifying  : libXt-1.1.4-6.1.el6.x86_64                                                                                                             70/122 
+DEBUG util.py:492:    Verifying  : postgresql-libs-8.4.20-8.el6_9.x86_64                                                                                                  71/122 
+DEBUG util.py:492:    Verifying  : unixODBC-2.2.14-14.el6.x86_64                                                                                                          72/122 
+DEBUG util.py:492:    Verifying  : libtirpc-0.2.1-15.el6.x86_64                                                                                                           73/122 
+DEBUG util.py:492:    Verifying  : autoconf-2.63-5.1.el6.noarch                                                                                                           74/122 
+DEBUG util.py:492:    Verifying  : libX11-common-1.6.4-3.el6.noarch                                                                                                       75/122 
+DEBUG util.py:492:    Verifying  : mailcap-2.1.31-2.el6.noarch                                                                                                            76/122 
+DEBUG util.py:492:    Verifying  : tcp_wrappers-libs-7.6-58.el6.x86_64                                                                                                    77/122 
+DEBUG util.py:492:    Verifying  : libc-client-2007e-11.el6.x86_64                                                                                                        78/122 
+DEBUG util.py:492:    Verifying  : libvpx-1.3.0-5.el6_5.x86_64                                                                                                            79/122 
+DEBUG util.py:492:    Verifying  : libidn-devel-1.18-2.el6.x86_64                                                                                                         80/122 
+DEBUG util.py:492:    Verifying  : libnghttp2-1.6.0-1.el6.1.x86_64                                                                                                        81/122 
+DEBUG util.py:492:    Verifying  : libX11-1.6.4-3.el6.x86_64                                                                                                              82/122 
+DEBUG util.py:492:    Verifying  : db4-devel-4.7.25-22.el6.x86_64                                                                                                         83/122 
+DEBUG util.py:492:    Verifying  : libedit-2.11-4.20080712cvs.1.el6.x86_64                                                                                                84/122 
+DEBUG util.py:492:    Verifying  : libmcrypt-2.5.8-9.el6.x86_64                                                                                                           85/122 
+DEBUG util.py:492:    Verifying  : 2:libpng-devel-1.2.49-2.el6_7.x86_64                                                                                                   86/122 
+DEBUG util.py:492:    Verifying  : libtidy-devel-0.99.0-19.20070615.1.el6.x86_64                                                                                          87/122 
+DEBUG util.py:492:    Verifying  : rpm-devel-4.8.0-59.el6.x86_64                                                                                                          88/122 
+DEBUG util.py:492:    Verifying  : firebird-libfbembed-2.5.7.27050.0-1.el6.x86_64                                                                                         89/122 
+DEBUG util.py:492:    Verifying  : libxcb-1.12-4.el6.x86_64                                                                                                               90/122 
+DEBUG util.py:492:    Verifying  : lm_sensors-libs-3.1.1-17.el6.x86_64                                                                                                    91/122 
+DEBUG util.py:492:    Verifying  : 1:net-snmp-libs-5.5-60.el6.x86_64                                                                                                      92/122 
+DEBUG util.py:492:    Verifying  : glib2-devel-2.28.8-10.el6.x86_64                                                                                                       93/122 
+DEBUG util.py:492:    Verifying  : libX11-devel-1.6.4-3.el6.x86_64                                                                                                        94/122 
+DEBUG util.py:492:    Verifying  : sqlite-devel-3.6.20-1.el6_7.2.x86_64                                                                                                   95/122 
+DEBUG util.py:492:    Verifying  : ssmtp-2.61-22.el6.x86_64                                                                                                               96/122 
+DEBUG util.py:492:    Verifying  : libICE-1.0.6-1.el6.x86_64                                                                                                              97/122 
+DEBUG util.py:492:    Verifying  : httpd24u-2.4.35-1.ius.el6.x86_64                                                                                                       98/122 
+DEBUG util.py:492:    Verifying  : 2:libpng-1.2.49-2.el6_7.x86_64                                                                                                         99/122 
+DEBUG util.py:492:    Verifying  : keyutils-libs-devel-1.4-5.el6.x86_64                                                                                                  100/122 
+DEBUG util.py:492:    Verifying  : rpcbind-0.2.0-16.el6.x86_64                                                                                                           101/122 
+DEBUG util.py:492:    Verifying  : cyrus-sasl-2.1.23-15.el6_6.2.x86_64                                                                                                   102/122 
+DEBUG util.py:492:    Verifying  : libgcrypt-1.4.5-12.el6_8.x86_64                                                                                                       103/122 
+DEBUG util.py:492:    Verifying  : ncurses-devel-5.7-4.20090207.el6.x86_64                                                                                               104/122 
+DEBUG util.py:492:    Verifying  : tcp_wrappers-devel-7.6-58.el6.x86_64                                                                                                  105/122 
+DEBUG util.py:492:    Verifying  : keyutils-1.4-5.el6.x86_64                                                                                                             106/122 
+DEBUG util.py:492:    Verifying  : pam-devel-1.1.1-24.el6.x86_64                                                                                                         107/122 
+DEBUG util.py:492:    Verifying  : 12:aspell-devel-0.60.6-12.el6.x86_64                                                                                                  108/122 
+DEBUG util.py:492:    Verifying  : httpd24u-tools-2.4.35-1.ius.el6.x86_64                                                                                                109/122 
+DEBUG util.py:492:    Verifying  : recode-3.6-28.1.el6.x86_64                                                                                                            110/122 
+DEBUG util.py:492:    Verifying  : libXext-1.3.3-1.el6.x86_64                                                                                                            111/122 
+DEBUG util.py:492:    Verifying  : libjpeg-turbo-1.2.1-3.el6_5.x86_64                                                                                                    112/122 
+DEBUG util.py:492:    Verifying  : python-argparse-1.2.1-2.1.el6.noarch                                                                                                  113/122 
+DEBUG util.py:492:    Verifying  : httpd24u-devel-2.4.35-1.ius.el6.x86_64                                                                                                114/122 
+DEBUG util.py:492:    Verifying  : elfutils-libelf-devel-0.164-2.el6.x86_64                                                                                              115/122 
+DEBUG util.py:492:    Verifying  : libtool-ltdl-devel-2.2.6-15.5.el6.x86_64                                                                                              116/122 
+DEBUG util.py:492:    Verifying  : libmcrypt-devel-2.5.8-9.el6.x86_64                                                                                                    117/122 
+DEBUG util.py:492:    Verifying  : libkadm5-1.10.3-65.el6.x86_64                                                                                                         118/122 
+DEBUG util.py:492:    Verifying  : libgssglue-0.1-11.el6.x86_64                                                                                                          119/122 
+DEBUG util.py:492:    Verifying  : systemtap-sdt-devel-2.9-9.el6.x86_64                                                                                                  120/122 
+DEBUG util.py:492:    Verifying  : apr15u-1.5.2-2.ius.el6.x86_64                                                                                                         121/122 
+DEBUG util.py:492:    Verifying  : libacl-devel-2.2.49-7.el6_9.1.x86_64                                                                                                  122/122 
+DEBUG util.py:492:  Installed:
+DEBUG util.py:492:    aspell-devel.x86_64 12:0.60.6-12.el6                 bzip2-devel.x86_64 0:1.0.5-7.el6_0              cyrus-sasl-devel.x86_64 0:2.1.23-15.el6_6.2         
+DEBUG util.py:492:    db4-devel.x86_64 0:4.7.25-22.el6                     enchant-devel.x86_64 1:1.5.0-5.el6              firebird-devel.x86_64 0:2.5.7.27050.0-1.el6         
+DEBUG util.py:492:    freetds-devel.x86_64 0:0.91-2.el6                    freetype-devel.x86_64 0:2.3.11-17.el6           gmp-devel.x86_64 0:4.3.1-13.el6                     
+DEBUG util.py:492:    httpd24u-devel.x86_64 0:2.4.35-1.ius.el6             krb5-devel.x86_64 0:1.10.3-65.el6               libXpm-devel.x86_64 0:3.5.10-2.el6                  
+DEBUG util.py:492:    libacl-devel.x86_64 0:2.2.49-7.el6_9.1               libc-client-devel.x86_64 0:2007e-11.el6         libcurl-devel.x86_64 0:7.19.7-53.el6_9              
+DEBUG util.py:492:    libedit-devel.x86_64 0:2.11-4.20080712cvs.1.el6      libicu-devel.x86_64 0:4.2.1-14.el6              libjpeg-turbo-devel.x86_64 0:1.2.1-3.el6_5          
+DEBUG util.py:492:    libmcrypt-devel.x86_64 0:2.5.8-9.el6                 libpng-devel.x86_64 2:1.2.49-2.el6_7            libtidy-devel.x86_64 0:0.99.0-19.20070615.1.el6     
+DEBUG util.py:492:    libtool.x86_64 0:2.2.6-15.5.el6                      libtool-ltdl-devel.x86_64 0:2.2.6-15.5.el6      libvpx-devel.x86_64 0:1.3.0-5.el6_5                 
+DEBUG util.py:492:    libxml2-devel.x86_64 0:2.7.6-21.el6_8.1              libxslt-devel.x86_64 0:1.1.26-2.el6_3.1         net-snmp-devel.x86_64 1:5.5-60.el6                  
+DEBUG util.py:492:    openldap-devel.x86_64 0:2.4.40-16.el6                openssl-devel.x86_64 0:1.0.1e-57.el6            pam-devel.x86_64 0:1.1.1-24.el6                     
+DEBUG util.py:492:    postgresql-devel.x86_64 0:8.4.20-8.el6_9             recode-devel.x86_64 0:3.6-28.1.el6              sqlite-devel.x86_64 0:3.6.20-1.el6_7.2              
+DEBUG util.py:492:    ssmtp.x86_64 0:2.61-22.el6                           systemtap-sdt-devel.x86_64 0:2.9-9.el6          t1lib-devel.x86_64 0:5.1.2-6.el6_2.1                
+DEBUG util.py:492:    tokyocabinet-devel.x86_64 0:1.4.33-6.el6             unixODBC-devel.x86_64 0:2.2.14-14.el6           zlib-devel.x86_64 0:1.2.3-29.el6                    
+DEBUG util.py:492:  Dependency Installed:
+DEBUG util.py:492:    apr15u.x86_64 0:1.5.2-2.ius.el6                      apr15u-devel.x86_64 0:1.5.2-2.ius.el6          apr15u-util.x86_64 0:1.5.4-3.ius.el6                 
+DEBUG util.py:492:    apr15u-util-devel.x86_64 0:1.5.4-3.ius.el6           aspell.x86_64 12:0.60.6-12.el6                 autoconf.noarch 0:2.63-5.1.el6                       
+DEBUG util.py:492:    automake.noarch 0:1.11.1-4.el6                       cyrus-sasl.x86_64 0:2.1.23-15.el6_6.2          db4-cxx.x86_64 0:4.7.25-22.el6                       
+DEBUG util.py:492:    elfutils-devel.x86_64 0:0.164-2.el6                  elfutils-libelf-devel.x86_64 0:0.164-2.el6     enchant.x86_64 1:1.5.0-5.el6                         
+DEBUG util.py:492:    expat-devel.x86_64 0:2.0.1-13.el6_8                  file-devel.x86_64 0:5.04-30.el6                firebird-libfbclient.x86_64 0:2.5.7.27050.0-1.el6    
+DEBUG util.py:492:    firebird-libfbembed.x86_64 0:2.5.7.27050.0-1.el6     freetds.x86_64 0:0.91-2.el6                    freetype.x86_64 0:2.3.11-17.el6                      
+DEBUG util.py:492:    glib2-devel.x86_64 0:2.28.8-10.el6                   gnutls.x86_64 0:2.12.23-22.el6                 httpd24u.x86_64 0:2.4.35-1.ius.el6                   
+DEBUG util.py:492:    httpd24u-filesystem.noarch 0:2.4.35-1.ius.el6        httpd24u-tools.x86_64 0:2.4.35-1.ius.el6       hunspell.x86_64 0:1.2.8-16.el6                       
+DEBUG util.py:492:    keyutils.x86_64 0:1.4-5.el6                          keyutils-libs-devel.x86_64 0:1.4-5.el6         libICE.x86_64 0:1.0.6-1.el6                          
+DEBUG util.py:492:    libSM.x86_64 0:1.2.1-2.el6                           libX11.x86_64 0:1.6.4-3.el6                    libX11-common.noarch 0:1.6.4-3.el6                   
+DEBUG util.py:492:    libX11-devel.x86_64 0:1.6.4-3.el6                    libXau.x86_64 0:1.0.6-4.el6                    libXau-devel.x86_64 0:1.0.6-4.el6                    
+DEBUG util.py:492:    libXext.x86_64 0:1.3.3-1.el6                         libXpm.x86_64 0:3.5.10-2.el6                   libXt.x86_64 0:1.1.4-6.1.el6                         
+DEBUG util.py:492:    libattr-devel.x86_64 0:2.4.44-7.el6                  libc-client.x86_64 0:2007e-11.el6              libcom_err-devel.x86_64 0:1.41.12-24.el6             
+DEBUG util.py:492:    libedit.x86_64 0:2.11-4.20080712cvs.1.el6            libevent.x86_64 0:1.4.13-4.el6                 libgcrypt.x86_64 0:1.4.5-12.el6_8                    
+DEBUG util.py:492:    libgcrypt-devel.x86_64 0:1.4.5-12.el6_8              libgpg-error.x86_64 0:1.7-4.el6                libgpg-error-devel.x86_64 0:1.7-4.el6                
+DEBUG util.py:492:    libgssglue.x86_64 0:0.1-11.el6                       libicu.x86_64 0:4.2.1-14.el6                   libidn-devel.x86_64 0:1.18-2.el6                     
+DEBUG util.py:492:    libjpeg-turbo.x86_64 0:1.2.1-3.el6_5                 libkadm5.x86_64 0:1.10.3-65.el6                libmcrypt.x86_64 0:2.5.8-9.el6                       
+DEBUG util.py:492:    libnghttp2.x86_64 0:1.6.0-1.el6.1                    libpng.x86_64 2:1.2.49-2.el6_7                 libselinux-devel.x86_64 0:2.0.94-7.el6               
+DEBUG util.py:492:    libsepol-devel.x86_64 0:2.0.41-4.el6                 libtidy.x86_64 0:0.99.0-19.20070615.1.el6      libtirpc.x86_64 0:0.2.1-15.el6                       
+DEBUG util.py:492:    libtool-ltdl.x86_64 0:2.2.6-15.5.el6                 libvpx.x86_64 0:1.3.0-5.el6_5                  libxcb.x86_64 0:1.12-4.el6                           
+DEBUG util.py:492:    libxcb-devel.x86_64 0:1.12-4.el6                     libxslt.x86_64 0:1.1.26-2.el6_3.1              lm_sensors-devel.x86_64 0:3.1.1-17.el6               
+DEBUG util.py:492:    lm_sensors-libs.x86_64 0:3.1.1-17.el6                m4.x86_64 0:1.4.13-5.el6                       mailcap.noarch 0:2.1.31-2.el6                        
+DEBUG util.py:492:    ncurses-devel.x86_64 0:5.7-4.20090207.el6            net-snmp-libs.x86_64 1:5.5-60.el6              nfs-utils.x86_64 1:1.2.3-78.el6_10.1                 
+DEBUG util.py:492:    nfs-utils-lib.x86_64 0:1.1.5-13.el6                  popt-devel.x86_64 0:1.13-7.el6                 postgresql.x86_64 0:8.4.20-8.el6_9                   
+DEBUG util.py:492:    postgresql-libs.x86_64 0:8.4.20-8.el6_9              python-argparse.noarch 0:1.2.1-2.1.el6         recode.x86_64 0:3.6-28.1.el6                         
+DEBUG util.py:492:    rpcbind.x86_64 0:0.2.0-16.el6                        rpm-devel.x86_64 0:4.8.0-59.el6                t1lib.x86_64 0:5.1.2-6.el6_2.1                       
+DEBUG util.py:492:    tcp_wrappers-devel.x86_64 0:7.6-58.el6               tcp_wrappers-libs.x86_64 0:7.6-58.el6          tokyocabinet.x86_64 0:1.4.33-6.el6                   
+DEBUG util.py:492:    unixODBC.x86_64 0:2.2.14-14.el6                      xorg-x11-proto-devel.noarch 0:7.7-14.el6      
+DEBUG util.py:492:  Complete!
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: rpm -qa --root '/var/lib/mock/epel-6-x86_64/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' > /var/lib/mock/epel-6-x86_64/result/installed_pkgs.log with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'PS1': '<mock-chroot> \\s-\\v\\$ '} and shell True
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG backend.py:530:  Copying packages to result dir
+DEBUG util.py:228:  kill orphans
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/epel-6-x86_64/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/epel-6-x86_64/root/var/cache/yum/'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/epel-6-x86_64/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/epel-6-x86_64/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/epel-6-x86_64/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
+DEBUG util.py:653:  child environment: None
+DEBUG util.py:579:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/epel-6-x86_64/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:634:  Child return code was: 0
