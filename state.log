@@ -1,0 +1,15 @@
+2019-01-16 14:50:25,714 - Mock Version: 1.4.13
+2019-01-16 14:50:25,838 - Start: yum install
+2019-01-16 14:51:11,502 - Finish: yum install
+2019-01-16 14:51:12,280 - Start: creating root cache
+2019-01-16 14:51:24,783 - Finish: creating root cache
+2019-01-16 14:51:24,786 - Finish: chroot init
+2019-01-16 14:51:24,916 - Start: build phase for php56tw-5.6.40-1.CTL.el7.src.rpm
+2019-01-16 14:51:24,920 - Start: build setup for php56tw-5.6.40-1.CTL.el7.src.rpm
+2019-01-16 14:51:54,962 - Finish: build setup for php56tw-5.6.40-1.CTL.el7.src.rpm
+2019-01-16 14:51:54,962 - Start: rpmbuild php56tw-5.6.40-1.CTL.el7.src.rpm
+2019-01-16 14:51:54,964 - Start: Outputting list of installed packages
+2019-01-16 14:51:55,176 - Finish: Outputting list of installed packages
+2019-01-16 15:12:24,497 - Finish: rpmbuild php56tw-5.6.40-1.CTL.el7.src.rpm
+2019-01-16 15:12:24,500 - Finish: build phase for php56tw-5.6.40-1.CTL.el7.src.rpm
+2019-01-16 15:12:24,502 - Finish: run
